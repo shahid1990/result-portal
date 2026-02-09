@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Page</title>
+</head>
+<body>
+
+<h2>Page Loaded</h2>
+<button onclick="loadData()">Load JSON</button>
+<pre id="out"></pre>
+
+<script>
+function loadData(){
+    fetch('data.json')
+    .then(r => r.json())
+    .then(d => {
+        document.getElementById("out").innerText = JSON.stringify(d, null, 2);
+    })
+    .catch(e=>{
+        document.getElementById("out").innerText = "ERROR: " + e;
+    });
+}
+</script>
+
+</body>
+</html>
