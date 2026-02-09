@@ -1,205 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pre-Board Result Portal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Result Portal</title>
 
-    <!-- PDF Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background:#f2f2f2;
-            padding:20px;
-        }
-
-        .box {
-            background:#fff;
-            padding:20px;
-            border-radius:10px;
-            max-width:900px;
-            margin:auto;
-        }
-
-        input, button {
-            padding:10px;
-            width:100%;
-            margin-top:10px;
-            font-size:16px;
-        }
-
-        button {
-            cursor:pointer;
-        }
-
-        .marksheet {
-            background:#fff;
-            padding:25px;
-            margin-top:20px;
-            border:2px solid #000;
-            page-break-inside: avoid;
-        }
-
-        .header {
-            text-align:center;
-            font-weight:bold;
-        }
-
-        .school {
-            font-size:22px;
-        }
-
-        .sub {
-            font-size:14px;
-        }
-
-        .title {
-            text-align:center;
-            margin:15px 0;
-            font-size:18px;
-            text-decoration:underline;
-            font-weight:bold;
-        }
-
-        .info {
-            margin-top:15px;
-            line-height:1.8;
-            font-size:15px;
-        }
-
-        table {
-            width:100%;
-            border-collapse:collapse;
-            margin-top:15px;
-            page-break-inside: avoid;
-        }
-
-        table, th, td {
-            border:1.5px solid black;
-        }
-
-        th, td {
-            padding:8px;
-            text-align:center;
-            font-size:15px;
-        }
-
-        .sign {
-            margin-top:60px;
-            display:flex;
-            justify-content:space-between;
-            font-weight:bold;
-            font-size:15px;
-        }
-
-        .download-btn {
-            margin-top:15px;
-            background:green;
-            color:white;
-            border:none;
-            font-size:16px;
-        }
-    </style>
+<style>
+body{
+    font-family: Arial;
+    background:#f2f2f2;
+    padding:20px;
+}
+.box{
+    background:#fff;
+    padding:20px;
+    max-width:600px;
+    margin:auto;
+    border-radius:8px;
+}
+input,button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    font-size:16px;
+}
+button{
+    cursor:pointer;
+}
+</style>
 </head>
 
 <body>
 
 <div class="box">
-    <h2 style="text-align:center;">Pre-Board Result Search</h2>
+    <h2 style="text-align:center;">Pre-Board Result</h2>
 
-    <!-- SEARCH -->
-    <input type="text" id="admno" placeholder="Enter Admission Number">
-    <button onclick="searchResult()">Search Result</button>
+    <input id="admno" placeholder="Enter Admission Number">
+    <button onclick="search()">Search</button>
 
-    <!-- OUTPUT -->
-    <div id="output"></div>
+    <div id="status"></div>
+
+    <button id="pdfBtn" style="display:none;" onclick="generatePDF()">⬇ Download PDF</button>
 </div>
 
 <script>
+const { jsPDF } = window.jspdf;
 let students = [];
+let currentStudent = null;
 
 /* Load data */
 fetch('data.json')
-.then(res => res.json())
-.then(data => {
-    students = data;
-});
+.then(r=>r.json())
+.then(d=>students=d);
 
-/* Search Result */
-function searchResult(){
+/* Search */
+function search(){
     let adm = document.getElementById("admno").value.trim();
-    let out = document.getElementById("output");
+    let st = students.find(s=> String(s["Adm. No."]).trim()===adm);
 
-    let student = students.find(s => 
-        String(s["Adm. No."]).trim() === String(adm).trim()
-    );
-
-    if(!student){
-        out.innerHTML = "<p style='color:red;font-weight:bold;'>❌ Admission Number not found</p>";
+    if(!st){
+        document.getElementById("status").innerHTML = "❌ Not Found";
+        document.getElementById("pdfBtn").style.display="none";
         return;
     }
 
-    out.innerHTML = `
-    <div class="marksheet" id="marksheet">
-
-        <div class="header">
-            <div class="school">SACRED HEART SCHOOL</div>
-            <div class="sub">(Affiliated to CBSE, up to +2 Level, New Delhi)</div>
-            <div class="sub">Near Sankat Mochan Mandir, Jhumri Telaiya, Koderma</div>
-            <div class="sub">Email: shstelaiya@gmail.com | Website: www.sacredheartkoderma.org</div>
-        </div>
-
-        <div class="title">PRE-BOARD EXAM RESULT (2025 - 26)</div>
-
-        <div class="info">
-            <b>Student’s Name:</b> ${student["STUDENT'S NAME"]}<br>
-            <b>Father’s Name:</b> ${student["FATHER'S NAME"]}<br>
-            <b>Adm. No:</b> ${student["Adm. No."]}<br>
-            <b>Class:</b> ${student["Class"]} &nbsp;&nbsp;
-            <b>Sec:</b> ${student["Sec."]} &nbsp;&nbsp;
-            <b>Roll No:</b> ${student["ROLL No."]}
-        </div>
-
-        <table>
-            <tr>
-                <th>Subject</th>
-                <th>Full Marks</th>
-                <th>Marks Obtained</th>
-            </tr>
-            <tr><td>ENGLISH</td><td>80</td><td>${student["ENGLISH (TH MAX-80)"]}</td></tr>
-            <tr><td>HINDI</td><td>80</td><td>${student["HINDI(TH MAX-80)"]}</td></tr>
-            <tr><td>MATHS</td><td>80</td><td>${student["MATHS(TH MAX-80)"]}</td></tr>
-            <tr><td>SCIENCE</td><td>80</td><td>${student["SCIENCE(TH MAX-80)"]}</td></tr>
-            <tr><td>SOCIAL SCIENCE</td><td>80</td><td>${student["SOCIAL SCIENCE(TH MAX-80)"]}</td></tr>
-            <tr><td>INFORMATION TECHNOLOGY</td><td>50</td><td>${student["INFORMATION TECHNOLOGY(TH MAX-50)"]}</td></tr>
-        </table>
-
-        <div class="sign">
-            <div>Class Teacher’s Sign</div>
-            <div>Principal<br>Sacred Heart School</div>
-        </div>
-
-    </div>
-
-    <button class="download-btn" onclick="downloadPDF()">⬇ Download PDF</button>
-    `;
+    currentStudent = st;
+    document.getElementById("status").innerHTML = "✅ Result Found";
+    document.getElementById("pdfBtn").style.display="block";
 }
 
-/* PDF Download */
-function downloadPDF(){
-    let element = document.getElementById("marksheet");
+/* Professional PDF */
+function generatePDF(){
+    const s = currentStudent;
+    const doc = new jsPDF("p","mm","a4");
 
-    let opt = {
-        margin: [10, 10, 10, 10],
-        filename: 'Result_' + document.getElementById("admno").value + '.pdf',
-        image: { type: 'jpeg', quality: 1 },
-        html2canvas: { scale: 1.5, useCORS: true },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-    };
+    let y = 15;
 
-    html2pdf().set(opt).from(element).save();
+    // Header
+    doc.setFont("Times","Bold");
+    doc.setFontSize(16);
+    doc.text("SACRED HEART SCHOOL",105,y,{align:"center"}); y+=7;
+
+    doc.setFontSize(10);
+    doc.text("(Affiliated to CBSE, up to +2 Level, New Delhi, Affiliation No. - 3430224)",105,y,{align:"center"}); y+=6;
+    doc.text("Near Sankat Mochan Mandir, Asnabad, Jhumri Telaiya, Koderma",105,y,{align:"center"}); y+=6;
+    doc.text("Email: shstelaiya@gmail.com   Website: www.sacredheartkoderma.org",105,y,{align:"center"}); y+=10;
+
+    doc.setFontSize(13);
+    doc.text("PRE-BOARD EXAM RESULT (2025 - 26)",105,y,{align:"center"}); y+=12;
+
+    doc.setFontSize(11);
+    doc.setFont("Times","Normal");
+
+    doc.text(`STUDENT’S NAME  -  ${s["STUDENT'S NAME"]}`,20,y); y+=7;
+    doc.text(`FATHER’S NAME   -  ${s["FATHER'S NAME"]}`,20,y); y+=7;
+    doc.text(`Adm. No.        -  ${s["Adm. No."]}`,20,y); y+=7;
+    doc.text(`Class           -  ${s["Class"]}`,20,y);
+    doc.text(`Sec  -  ${s["Sec."]}`,80,y);
+    doc.text(`Roll No.  -  ${s["ROLL No."]}`,130,y); y+=10;
+
+    // Table Header
+    doc.setFont("Times","Bold");
+    doc.text("SUBJECT",25,y);
+    doc.text("FULL MARKS",95,y);
+    doc.text("MARKS OBTAINED",150,y);
+    y+=3;
+    doc.line(20,y,190,y); y+=6;
+
+    doc.setFont("Times","Normal");
+
+    function row(sub,full,marks){
+        doc.text(sub,25,y);
+        doc.text(full,100,y,{align:"center"});
+        doc.text(marks,160,y,{align:"center"});
+        y+=7;
+    }
+
+    row("ENGLISH","80",s["ENGLISH (TH MAX-80)"]);
+    row("HINDI / SANSKRIT","80",s["HINDI(TH MAX-80)"]);
+    row("MATHS","80",s["MATHS(TH MAX-80)"]);
+    row("SCIENCE","80",s["SCIENCE(TH MAX-80)"]);
+    row("SOCIAL SCIENCE","80",s["SOCIAL SCIENCE(TH MAX-80)"]);
+    row("INFORMATION TECHNOLOGY","50",s["INFORMATION TECHNOLOGY(TH MAX-50)"]);
+
+    y+=15;
+
+    doc.text("CLASS TEACHER’S SIGN",25,y);
+    doc.text("PRINCIPAL",150,y,{align:"center"});
+    y+=7;
+    doc.text("SACRED HEART SCHOOL",150,y,{align:"center"});
+
+    doc.save(`${s["Adm. No."]}-${s["STUDENT'S NAME"]}.pdf`);
 }
 </script>
 
