@@ -1,26 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Test Page</title>
-</head>
-<body>
-
-<h2>Page Loaded</h2>
-<button onclick="loadData()">Load JSON</button>
-<pre id="out"></pre>
-
 <script>
-function loadData(){
-    fetch('data.json')
-    .then(r => r.json())
-    .then(d => {
-        document.getElementById("out").innerText = JSON.stringify(d, null, 2);
-    })
-    .catch(e=>{
-        document.getElementById("out").innerText = "ERROR: " + e;
-    });
+let students = [];
+
+fetch('data.json')
+.then(res => res.json())
+.then(data => {
+    students = data;
+    console.log("Loaded Data:", students); // debug
+});
+
+function searchResult(){
+    let adm = document.getElementById("admno").value.trim();
+
+    let student = students.find(s => 
+        String(s["Adm. No."]).trim() === String(adm).trim()
+    );
+
+    let out = document.getElementById("output");
+
+    if(student){
+
+        let total = 
+            Number(student["ENGLISH (TH MAX-80)"]) +
+            Number(student["HINDI(TH MAX-80)"]) +
+            Number(student["MATHS(TH MAX-80)"]) +
+            Number(student["SCIENCE(TH MAX-80)"]) +
+            Number(student["SOCIAL SCIENCE(TH MAX-80)"]) +
+            Number(student["INFORMATION TECHNOLOGY(TH MAX-50)"]);
+
+        let percentage = ((total / 450) * 100).toFixed(2);
+
+        out.innerHTML = `
+        <div class="result">
+            <b>Student Name:</b> ${student["STUDENT'S NAME"]}<br>
+            <b>Father's Name:</b> ${student["FATHER'S NAME"]}<br>
+            <b>Class:</b> ${student["Class"]} ${student["Sec."]}<br>
+            <b>Roll No:</b> ${student["ROLL No."]}<br><br>
+
+            <b>Marks:</b><br>
+            English: ${student["ENGLISH (TH MAX-80)"]}<br>
+            Hindi: ${student["HINDI(TH MAX-80)"]}<br>
+            Maths: ${student["MATHS(TH MAX-80)"]}<br>
+            Science: ${student["SCIENCE(TH MAX-80)"]}<br>
+            Social Science: ${student["SOCIAL SCIENCE(TH MAX-80)"]}<br>
+            IT: ${student["INFORMATION TECHNOLOGY(TH MAX-50)"]}<br><br>
+
+            <b>Total Marks:</b> ${total} / 450<br>
+            <b>Percentage:</b> ${percentage} %
+        </div>`;
+    }else{
+        out.innerHTML = "<div class='result'>❌ Admission Number not found</div>";
+    }
 }
 </script>
-
-</body>
-</html>
