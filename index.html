@@ -3,27 +3,83 @@
 <head>
     <title>Pre-Board Result Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- PDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
     <style>
         body { font-family: Arial; background:#f2f2f2; padding:20px; }
-        .box { background:#fff; padding:20px; border-radius:10px; max-width:700px; margin:auto; }
-        input, button { width:100%; padding:10px; margin-top:10px; }
-        .result { margin-top:15px; padding:15px; background:#e9ffe9; border-radius:8px; }
-        h2 { text-align:center; }
+        .box { background:#fff; padding:20px; border-radius:10px; max-width:850px; margin:auto; }
+
+        input, button { padding:10px; width:100%; margin-top:10px; }
+
+        .marksheet {
+            background:#fff;
+            padding:25px;
+            margin-top:20px;
+            border:1px solid #000;
+        }
+
+        .header {
+            text-align:center;
+            font-weight:bold;
+        }
+
+        .school { font-size:20px; }
+        .sub { font-size:14px; }
+
+        .title {
+            text-align:center;
+            margin:15px 0;
+            font-size:18px;
+            text-decoration:underline;
+        }
+
+        table {
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
+
+        table, th, td {
+            border:1px solid black;
+        }
+
+        th, td {
+            padding:8px;
+            text-align:center;
+        }
+
+        .info {
+            margin-top:15px;
+            line-height:1.8;
+        }
+
+        .sign {
+            margin-top:50px;
+            display:flex;
+            justify-content:space-between;
+            font-weight:bold;
+        }
+
+        .download-btn {
+            margin-top:15px;
+            background:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
     </style>
 </head>
 
 <body>
 
 <div class="box">
-    <h2>Pre-Board Result Portal</h2>
+    <h2 style="text-align:center;">Pre-Board Result Search</h2>
 
-    <!-- 🔍 SEARCH BOX -->
     <input type="text" id="admno" placeholder="Enter Admission Number">
-
-    <!-- 🔘 SEARCH BUTTON -->
     <button onclick="searchResult()">Search Result</button>
 
-    <!-- 📤 OUTPUT AREA -->
     <div id="output"></div>
 </div>
 
@@ -34,51 +90,99 @@ fetch('data.json')
 .then(res => res.json())
 .then(data => {
     students = data;
-    console.log("Loaded Data:", students); // debug
+    console.log("Loaded:", students);
 });
 
 function searchResult(){
     let adm = document.getElementById("admno").value.trim();
+    let out = document.getElementById("output");
 
     let student = students.find(s => 
         String(s["Adm. No."]).trim() === String(adm).trim()
     );
 
-    let out = document.getElementById("output");
-
-    if(student){
-
-        let total = 
-            Number(student["ENGLISH (TH MAX-80)"]) +
-            Number(student["HINDI(TH MAX-80)"]) +
-            Number(student["MATHS(TH MAX-80)"]) +
-            Number(student["SCIENCE(TH MAX-80)"]) +
-            Number(student["SOCIAL SCIENCE(TH MAX-80)"]) +
-            Number(student["INFORMATION TECHNOLOGY(TH MAX-50)"]);
-
-        let percentage = ((total / 450) * 100).toFixed(2);
-
-        out.innerHTML = `
-        <div class="result">
-            <b>Student Name:</b> ${student["STUDENT'S NAME"]}<br>
-            <b>Father's Name:</b> ${student["FATHER'S NAME"]}<br>
-            <b>Class:</b> ${student["Class"]} ${student["Sec."]}<br>
-            <b>Roll No:</b> ${student["ROLL No."]}<br><br>
-
-            <b>Marks:</b><br>
-            English: ${student["ENGLISH (TH MAX-80)"]}<br>
-            Hindi: ${student["HINDI(TH MAX-80)"]}<br>
-            Maths: ${student["MATHS(TH MAX-80)"]}<br>
-            Science: ${student["SCIENCE(TH MAX-80)"]}<br>
-            Social Science: ${student["SOCIAL SCIENCE(TH MAX-80)"]}<br>
-            IT: ${student["INFORMATION TECHNOLOGY(TH MAX-50)"]}<br><br>
-
-            <b>Total Marks:</b> ${total} / 450<br>
-            <b>Percentage:</b> ${percentage} %
-        </div>`;
-    }else{
-        out.innerHTML = "<div class='result'>❌ Admission Number not found</div>";
+    if(!student){
+        out.innerHTML = "<p style='color:red;'>❌ Admission Number not found</p>";
+        return;
     }
+
+    let total = 
+        Number(student["ENGLISH (TH MAX-80)"]) +
+        Number(student["HINDI(TH MAX-80)"]) +
+        Number(student["MATHS(TH MAX-80)"]) +
+        Number(student["SCIENCE(TH MAX-80)"]) +
+        Number(student["SOCIAL SCIENCE(TH MAX-80)"]) +
+        Number(student["INFORMATION TECHNOLOGY(TH MAX-50)"]);
+
+    let percentage = ((total / 450) * 100).toFixed(2);
+
+    out.innerHTML = `
+    <div class="marksheet" id="marksheet">
+
+        <div class="header">
+            <div class="school">SACRED HEART SCHOOL</div>
+            <div class="sub">(Affiliated to CBSE, up to +2 Level, New Delhi)</div>
+            <div class="sub">Near Sankat Mochan Mandir, Jhumri Telaiya, Koderma</div>
+            <div class="sub">Email: shstelaiya@gmail.com | Website: www.sacredheartkoderma.org</div>
+        </div>
+
+        <div class="title">PRE-BOARD EXAM RESULT (2025 - 26)</div>
+
+        <div class="info">
+            <b>Student’s Name:</b> ${student["STUDENT'S NAME"]}<br>
+            <b>Father’s Name:</b> ${student["FATHER'S NAME"]}<br>
+            <b>Adm. No:</b> ${student["Adm. No."]}<br>
+            <b>Class:</b> ${student["Class"]} &nbsp;&nbsp;
+            <b>Sec:</b> ${student["Sec."]} &nbsp;&nbsp;
+            <b>Roll No:</b> ${student["ROLL No."]}
+        </div>
+
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Full Marks</th>
+                <th>Marks Obtained</th>
+            </tr>
+            <tr><td>ENGLISH</td><td>80</td><td>${student["ENGLISH (TH MAX-80)"]}</td></tr>
+            <tr><td>HINDI</td><td>80</td><td>${student["HINDI(TH MAX-80)"]}</td></tr>
+            <tr><td>MATHS</td><td>80</td><td>${student["MATHS(TH MAX-80)"]}</td></tr>
+            <tr><td>SCIENCE</td><td>80</td><td>${student["SCIENCE(TH MAX-80)"]}</td></tr>
+            <tr><td>SOCIAL SCIENCE</td><td>80</td><td>${student["SOCIAL SCIENCE(TH MAX-80)"]}</td></tr>
+            <tr><td>INFORMATION TECHNOLOGY</td><td>50</td><td>${student["INFORMATION TECHNOLOGY(TH MAX-50)"]}</td></tr>
+            <tr>
+                <th>Total</th>
+                <th>450</th>
+                <th>${total}</th>
+            </tr>
+        </table>
+
+        <div style="margin-top:15px;">
+            <b>Percentage:</b> ${percentage} %
+        </div>
+
+        <div class="sign">
+            <div>Class Teacher’s Sign</div>
+            <div>Principal<br>Sacred Heart School</div>
+        </div>
+
+    </div>
+
+    <button class="download-btn" onclick="downloadPDF()">⬇ Download PDF</button>
+    `;
+}
+
+function downloadPDF(){
+    let element = document.getElementById("marksheet");
+
+    let opt = {
+        margin: 0.3,
+        filename: 'Result_' + Date.now() + '.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().from(element).set(opt).save();
 }
 </script>
 
