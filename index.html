@@ -8,16 +8,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
     <style>
-        body { font-family: Arial; background:#f2f2f2; padding:20px; }
-        .box { background:#fff; padding:20px; border-radius:10px; max-width:850px; margin:auto; }
+        body {
+            font-family: Arial, sans-serif;
+            background:#f2f2f2;
+            padding:20px;
+        }
 
-        input, button { padding:10px; width:100%; margin-top:10px; }
+        .box {
+            background:#fff;
+            padding:20px;
+            border-radius:10px;
+            max-width:900px;
+            margin:auto;
+        }
+
+        input, button {
+            padding:10px;
+            width:100%;
+            margin-top:10px;
+            font-size:16px;
+        }
+
+        button {
+            cursor:pointer;
+        }
 
         .marksheet {
             background:#fff;
             padding:25px;
             margin-top:20px;
-            border:1px solid #000;
+            border:2px solid #000;
+            page-break-inside: avoid;
         }
 
         .header {
@@ -25,41 +46,51 @@
             font-weight:bold;
         }
 
-        .school { font-size:20px; }
-        .sub { font-size:14px; }
+        .school {
+            font-size:22px;
+        }
+
+        .sub {
+            font-size:14px;
+        }
 
         .title {
             text-align:center;
             margin:15px 0;
             font-size:18px;
             text-decoration:underline;
+            font-weight:bold;
+        }
+
+        .info {
+            margin-top:15px;
+            line-height:1.8;
+            font-size:15px;
         }
 
         table {
             width:100%;
             border-collapse:collapse;
             margin-top:15px;
+            page-break-inside: avoid;
         }
 
         table, th, td {
-            border:1px solid black;
+            border:1.5px solid black;
         }
 
         th, td {
             padding:8px;
             text-align:center;
-        }
-
-        .info {
-            margin-top:15px;
-            line-height:1.8;
+            font-size:15px;
         }
 
         .sign {
-            margin-top:50px;
+            margin-top:60px;
             display:flex;
             justify-content:space-between;
             font-weight:bold;
+            font-size:15px;
         }
 
         .download-btn {
@@ -67,7 +98,7 @@
             background:green;
             color:white;
             border:none;
-            cursor:pointer;
+            font-size:16px;
         }
     </style>
 </head>
@@ -77,22 +108,25 @@
 <div class="box">
     <h2 style="text-align:center;">Pre-Board Result Search</h2>
 
+    <!-- SEARCH -->
     <input type="text" id="admno" placeholder="Enter Admission Number">
     <button onclick="searchResult()">Search Result</button>
 
+    <!-- OUTPUT -->
     <div id="output"></div>
 </div>
 
 <script>
 let students = [];
 
+/* Load data */
 fetch('data.json')
 .then(res => res.json())
 .then(data => {
     students = data;
-    console.log("Loaded:", students);
 });
 
+/* Search Result */
 function searchResult(){
     let adm = document.getElementById("admno").value.trim();
     let out = document.getElementById("output");
@@ -102,19 +136,9 @@ function searchResult(){
     );
 
     if(!student){
-        out.innerHTML = "<p style='color:red;'>❌ Admission Number not found</p>";
+        out.innerHTML = "<p style='color:red;font-weight:bold;'>❌ Admission Number not found</p>";
         return;
     }
-
-    let total = 
-        Number(student["ENGLISH (TH MAX-80)"]) +
-        Number(student["HINDI(TH MAX-80)"]) +
-        Number(student["MATHS(TH MAX-80)"]) +
-        Number(student["SCIENCE(TH MAX-80)"]) +
-        Number(student["SOCIAL SCIENCE(TH MAX-80)"]) +
-        Number(student["INFORMATION TECHNOLOGY(TH MAX-50)"]);
-
-    let percentage = ((total / 450) * 100).toFixed(2);
 
     out.innerHTML = `
     <div class="marksheet" id="marksheet">
@@ -149,16 +173,7 @@ function searchResult(){
             <tr><td>SCIENCE</td><td>80</td><td>${student["SCIENCE(TH MAX-80)"]}</td></tr>
             <tr><td>SOCIAL SCIENCE</td><td>80</td><td>${student["SOCIAL SCIENCE(TH MAX-80)"]}</td></tr>
             <tr><td>INFORMATION TECHNOLOGY</td><td>50</td><td>${student["INFORMATION TECHNOLOGY(TH MAX-50)"]}</td></tr>
-            <tr>
-                <th>Total</th>
-                <th>450</th>
-                <th>${total}</th>
-            </tr>
         </table>
-
-        <div style="margin-top:15px;">
-            <b>Percentage:</b> ${percentage} %
-        </div>
 
         <div class="sign">
             <div>Class Teacher’s Sign</div>
@@ -171,18 +186,20 @@ function searchResult(){
     `;
 }
 
+/* PDF Download */
 function downloadPDF(){
     let element = document.getElementById("marksheet");
 
     let opt = {
-        margin: 0.3,
-        filename: 'Result_' + Date.now() + '.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+        margin: [10, 10, 10, 10],
+        filename: 'Result_' + document.getElementById("admno").value + '.pdf',
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas: { scale: 1.5, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
     };
 
-    html2pdf().from(element).set(opt).save();
+    html2pdf().set(opt).from(element).save();
 }
 </script>
 
