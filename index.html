@@ -1,33 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Result Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- jsPDF -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 <style>
 body{
-    font-family: Arial;
-    background:#f2f2f2;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    min-height:100vh;
     padding:20px;
 }
+
 .box{
     background:#fff;
-    padding:20px;
-    max-width:600px;
+    padding:25px;
+    max-width:420px;
     margin:auto;
-    border-radius:8px;
+    border-radius:15px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.25);
+    animation:fadeIn 0.6s ease;
 }
-input,button{
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+.header{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.header img{
+    height:70px;
+}
+
+.header div{
+    font-size:14px;
+    color:#555;
+}
+
+h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+input{
     width:100%;
-    padding:10px;
-    margin-top:10px;
+    padding:12px;
     font-size:16px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    outline:none;
+    transition:0.3s;
 }
+
+input:focus{
+    border-color:#1e3c72;
+    box-shadow:0 0 0 3px rgba(30,60,114,0.15);
+}
+
 button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
     cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+.search-btn{
+    background:#1e3c72;
+    color:#fff;
+}
+
+.search-btn:hover{
+    background:#16305c;
+}
+
+#pdfBtn{
+    background:#2e8b57;
+    color:#fff;
+    display:none;
+}
+
+#pdfBtn:hover{
+    background:#246b44;
+}
+
+#status{
+    margin-top:15px;
+    text-align:center;
+    font-weight:600;
+}
+
+#preview{
+    display:none;
+    margin-top:15px;
+    background:#f4f6fb;
+    padding:12px;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.footer{
+    text-align:center;
+    font-size:12px;
+    color:#eee;
+    margin-top:20px;
 }
 </style>
 </head>
@@ -35,14 +128,28 @@ button{
 <body>
 
 <div class="box">
-    <h2 style="text-align:center;">Pre-Board Result</h2>
+
+    <div class="header">
+        <!-- replace logo.png with your logo -->
+        <img src="image.jpeg">
+        <div>Affiliated to CBSE</div>
+    </div>
+
+    <h2>Pre-Board Result (2025-26)</h2>
 
     <input id="admno" placeholder="Enter Admission Number">
-    <button onclick="search()">Search</button>
+    <button class="search-btn" onclick="search()">🔍 Search Result</button>
 
     <div id="status"></div>
 
-    <button id="pdfBtn" style="display:none;" onclick="generatePDF()">⬇ Download PDF</button>
+    <div id="preview"></div>
+
+    <button id="pdfBtn" onclick="generatePDF()">⬇ Download Result PDF</button>
+
+</div>
+
+<div class="footer">
+© 2025 Sacred Heart School | Result Portal
 </div>
 
 <script>
@@ -55,82 +162,89 @@ fetch('data.json')
 .then(r=>r.json())
 .then(d=>students=d);
 
-/* Search */
+/* Search student */
 function search(){
     let adm = document.getElementById("admno").value.trim();
-    let st = students.find(s=> String(s["Adm. No."]).trim()===adm);
+    let st = students.find(s=>String(s["Adm. No."]).trim()===adm);
+
+    if(!adm){
+        document.getElementById("status").innerHTML =
+        `<span style="color:red;">❌ Please enter Admission Number</span>`;
+        return;
+    }
 
     if(!st){
-        document.getElementById("status").innerHTML = "❌ Not Found";
+        document.getElementById("status").innerHTML =
+        `<span style="color:red;">❌ Admission Number Not Found</span>`;
+        document.getElementById("preview").style.display="none";
         document.getElementById("pdfBtn").style.display="none";
         return;
     }
 
     currentStudent = st;
-    document.getElementById("status").innerHTML = "✅ Result Found";
+
+    document.getElementById("status").innerHTML =
+    `<span style="color:green;">✅ Result Found</span>`;
+
+    document.getElementById("preview").style.display="block";
+    document.getElementById("preview").innerHTML = `
+        <b>Name:</b> ${st["STUDENT'S NAME"]}<br>
+        <b>Class:</b> ${st["Class"]}-${st["Sec."]}<br>
+        <b>Roll No:</b> ${st["ROLL No."]}
+    `;
+
     document.getElementById("pdfBtn").style.display="block";
 }
 
-/* Professional PDF */
+/* Generate PDF */
 function generatePDF(){
     const s = currentStudent;
     const doc = new jsPDF("p","mm","a4");
-
     let y = 15;
 
-    // Header
     doc.setFont("Times","Bold");
     doc.setFontSize(16);
     doc.text("SACRED HEART SCHOOL",105,y,{align:"center"}); y+=7;
 
     doc.setFontSize(10);
-    doc.text("(Affiliated to CBSE, up to +2 Level, New Delhi, Affiliation No. - 3430224)",105,y,{align:"center"}); y+=6;
-    doc.text("Near Sankat Mochan Mandir, Asnabad, Jhumri Telaiya, Koderma",105,y,{align:"center"}); y+=6;
-    doc.text("Email: shstelaiya@gmail.com   Website: www.sacredheartkoderma.org",105,y,{align:"center"}); y+=10;
+    doc.text("(Affiliated to CBSE, New Delhi)",105,y,{align:"center"}); y+=10;
 
     doc.setFontSize(13);
-    doc.text("PRE-BOARD EXAM RESULT (2025 - 26)",105,y,{align:"center"}); y+=12;
+    doc.text("PRE-BOARD EXAM RESULT (2025-26)",105,y,{align:"center"}); y+=12;
 
     doc.setFontSize(11);
     doc.setFont("Times","Normal");
 
-    doc.text(`STUDENT’S NAME  -  ${s["STUDENT'S NAME"]}`,20,y); y+=7;
-    doc.text(`FATHER’S NAME   -  ${s["FATHER'S NAME"]}`,20,y); y+=7;
-    doc.text(`Adm. No.        -  ${s["Adm. No."]}`,20,y); y+=7;
-    doc.text(`Class           -  ${s["Class"]}`,20,y);
-    doc.text(`Sec  -  ${s["Sec."]}`,80,y);
-    doc.text(`Roll No.  -  ${s["ROLL No."]}`,130,y); y+=10;
+    doc.text(`Student Name : ${s["STUDENT'S NAME"]}`,20,y); y+=7;
+    doc.text(`Father's Name : ${s["FATHER'S NAME"]}`,20,y); y+=7;
+    doc.text(`Admission No : ${s["Adm. No."]}`,20,y); y+=7;
+    doc.text(`Class : ${s["Class"]}-${s["Sec."]}`,20,y);
+    doc.text(`Roll No : ${s["ROLL No."]}`,120,y); y+=10;
 
-    // Table Header
     doc.setFont("Times","Bold");
     doc.text("SUBJECT",25,y);
-    doc.text("FULL MARKS",95,y);
-    doc.text("MARKS OBTAINED",150,y);
-    y+=3;
-    doc.line(20,y,190,y); y+=6;
+    doc.text("FULL",100,y,{align:"center"});
+    doc.text("MARKS",160,y,{align:"center"});
+    y+=3; doc.line(20,y,190,y); y+=6;
 
     doc.setFont("Times","Normal");
-
     function row(sub,full,marks){
         doc.text(sub,25,y);
         doc.text(full,100,y,{align:"center"});
-        doc.text(marks,160,y,{align:"center"});
+        doc.text(String(marks),160,y,{align:"center"});
         y+=7;
     }
 
     row("ENGLISH","80",s["ENGLISH (TH MAX-80)"]);
-    row("HINDI / SANSKRIT","80",s["HINDI(TH MAX-80)"]);
+    row("HINDI","80",s["HINDI(TH MAX-80)"]);
     row("MATHS","80",s["MATHS(TH MAX-80)"]);
     row("SCIENCE","80",s["SCIENCE(TH MAX-80)"]);
     row("SOCIAL SCIENCE","80",s["SOCIAL SCIENCE(TH MAX-80)"]);
     row("INFORMATION TECHNOLOGY","50",s["INFORMATION TECHNOLOGY(TH MAX-50)"]);
 
-    y+=15;
-
-    doc.text("CLASS TEACHER’S SIGN",25,y);
-    doc.text("PRINCIPAL",150,y,{align:"center"});
-    y+=7;
-    doc.text("SACRED HEART SCHOOL",150,y,{align:"center"});
+    y+=20;
+    doc.text("Class Teacher's Sign",25,y);
+    doc.text("Principal",150,y,{align:"center"});
 
     doc.save(`${s["Adm. No."]}-${s["STUDENT'S NAME"]}.pdf`);
 }
