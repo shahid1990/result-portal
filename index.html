@@ -14,7 +14,6 @@ body{
     min-height:100vh;
     padding:20px;
 }
-
 .box{
     background:#fff;
     padding:25px;
@@ -23,12 +22,9 @@ body{
     border-radius:15px;
     box-shadow:0 20px 40px rgba(0,0,0,0.25);
 }
-
 .header{text-align:center;margin-bottom:15px;}
 .header img{height:70px;}
-
 h2{text-align:center;color:#1e3c72;}
-
 input{
     width:100%;
     padding:12px;
@@ -36,7 +32,6 @@ input{
     border-radius:8px;
     border:1px solid #ccc;
 }
-
 button{
     width:100%;
     padding:12px;
@@ -47,15 +42,12 @@ button{
     cursor:pointer;
     font-weight:600;
 }
-
 .search-btn{background:#1e3c72;color:#fff;}
 .generate-btn{background:#2e8b57;color:#fff;}
-
 #status{margin-top:15px;text-align:center;font-weight:600;}
 #preview{display:none;margin-top:15px;background:#f4f6fb;padding:12px;border-radius:8px;}
 #pdfPreviewContainer{display:none;margin-top:20px;}
 iframe{width:100%;height:600px;border:1px solid #ccc;border-radius:8px;}
-
 .footer{
     text-align:center;
     font-size:12px;
@@ -68,7 +60,6 @@ iframe{width:100%;height:600px;border:1px solid #ccc;border-radius:8px;}
 <body>
 
 <div class="box">
-
     <div class="header">
         <img src="image.jpeg">
         <div>Affiliated to CBSE</div>
@@ -88,7 +79,6 @@ iframe{width:100%;height:600px;border:1px solid #ccc;border-radius:8px;}
         <iframe id="pdfFrame"></iframe>
         <button class="generate-btn" onclick="downloadPDF()">Download PDF</button>
     </div>
-
 </div>
 
 <div class="footer">
@@ -100,65 +90,101 @@ const { jsPDF } = window.jspdf;
 let students = [];
 let currentStudent = null;
 
-// Load JSON data
+// Load JSON
 fetch('data.json')
 .then(r=>r.json())
 .then(d=>students=d);
 
-// Search Function
+// Search
 function search(){
     let adm = document.getElementById("admno").value.trim();
 
     if(!adm){
-        document.getElementById("status").innerHTML =
-        "<span style='color:red;'>Please enter Admission Number</span>";
+        status.innerHTML="<span style='color:red;'>Enter Admission Number</span>";
         return;
     }
 
     let st = students.find(s=>String(s["Adm. No."]).trim()===adm);
 
     if(!st){
-        document.getElementById("status").innerHTML =
-        "<span style='color:red;'>Admission Number Not Found</span>";
-        document.getElementById("preview").style.display="none";
-        document.getElementById("generateBtn").style.display="none";
+        status.innerHTML="<span style='color:red;'>Not Found</span>";
+        preview.style.display="none";
+        generateBtn.style.display="none";
         return;
     }
 
     currentStudent = st;
+    status.innerHTML="<span style='color:green;'>Result Found</span>";
 
-    document.getElementById("status").innerHTML =
-    "<span style='color:green;'>Result Found</span>";
-
-    document.getElementById("preview").style.display="block";
-    document.getElementById("preview").innerHTML = `
+    preview.style.display="block";
+    preview.innerHTML=`
         <b>Name:</b> ${st["STUDENT'S NAME"]}<br>
         <b>Class:</b> ${st["Class"]}-${st["Sec."]}<br>
         <b>Roll No:</b> ${st["ROLL No."]}
     `;
 
-    document.getElementById("generateBtn").style.display="block";
+    generateBtn.style.display="block";
 }
 
-// Create PDF Document
+// Convert image to base64 safely
+function getBase64Image(img) {
+    const canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+    const ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+    return canvas.toDataURL("image/jpeg");
+}
+
+// Create PDF
 function createPDF(){
+
     const s = currentStudent;
     const doc = new jsPDF("p","mm","a4");
+    const pageWidth = doc.internal.pageSize.getWidth();
     let y = 15;
 
-    doc.setFont("Times","Bold");
-    doc.setFontSize(16);
-    doc.text("SACRED HEART SCHOOL",105,y,{align:"center"}); y+=7;
+    const img = document.querySelector(".header img");
+    const base64 = getBase64Image(img);
+
+    // LOGO
+    doc.addImage(base64,"JPEG",15,10,25,25);
+
+    // SCHOOL NAME
+    doc.setFont("times","bold");
+    doc.setFontSize(24);
+    doc.text("SACRED HEART SCHOOL", pageWidth/2,18,{align:"center"});
+
+    // BLACK STRIP
+    doc.setFillColor(0,0,0);
+    doc.rect(45,23,120,8,"F");
 
     doc.setFontSize(10);
-    doc.setFont("Times","Normal");
-    doc.text("(Affiliated to CBSE, New Delhi)",105,y,{align:"center"}); y+=10;
+    doc.setTextColor(255,255,255);
+    doc.setFont("times","italic");
+    doc.text("(Affiliated to CBSE, up to +2 Level, New Delhi, Affiliation No. - 3430224)",
+        pageWidth/2,29,{align:"center"});
 
-    doc.setFontSize(13);
-    doc.setFont("Times","Bold");
-    doc.text("PRE-BOARD EXAM RESULT (2025-26)",105,y,{align:"center"}); y+=12;
+    doc.setTextColor(0,0,0);
 
-    doc.setFont("Times","Normal");
+    doc.setFontSize(11);
+    doc.setFont("times","normal");
+    doc.text("Near Sankat Mochan Mandir, Asnabad, Jhumri Telaiya, Koderma",
+        pageWidth/2,37,{align:"center"});
+    doc.text("Email: shstelaiya@gmail.com     Website: www.sacredheartkoderma.org",
+        pageWidth/2,43,{align:"center"});
+
+    doc.setLineWidth(0.8);
+    doc.line(15,48,pageWidth-15,48);
+
+    y = 60;
+
+    doc.setFont("times","bold");
+    doc.setFontSize(14);
+    doc.text("PRE-BOARD EXAM RESULT (2025-26)",pageWidth/2,y,{align:"center"});
+    y+=12;
+
+    doc.setFont("times","normal");
     doc.setFontSize(11);
 
     doc.text(`Student Name : ${s["STUDENT'S NAME"]}`,20,y); y+=7;
@@ -167,13 +193,15 @@ function createPDF(){
     doc.text(`Class : ${s["Class"]}-${s["Sec."]}`,20,y);
     doc.text(`Roll No : ${s["ROLL No."]}`,120,y); y+=10;
 
-    doc.setFont("Times","Bold");
+    doc.setFont("times","bold");
     doc.text("SUBJECT",25,y);
     doc.text("FULL",100,y,{align:"center"});
     doc.text("MARKS",160,y,{align:"center"});
-    y+=3; doc.line(20,y,190,y); y+=6;
+    y+=3;
+    doc.line(20,y,190,y);
+    y+=6;
 
-    doc.setFont("Times","Normal");
+    doc.setFont("times","normal");
 
     function row(sub,full,marks){
         doc.text(sub,25,y);
@@ -191,22 +219,21 @@ function createPDF(){
 
     y+=20;
     doc.text("Class Teacher's Sign",25,y);
-    doc.text("Principal",150,y,{align:"center"});
+    doc.text("Principal",160,y,{align:"center"});
 
     return doc;
 }
 
-// Generate & Preview
+// Preview
 function generatePDF(){
     const doc = createPDF();
-    const pdfBlob = doc.output("blob");
-    const pdfURL = URL.createObjectURL(pdfBlob);
-
-    document.getElementById("pdfFrame").src = pdfURL;
-    document.getElementById("pdfPreviewContainer").style.display = "block";
+    const blob = doc.output("blob");
+    const url = URL.createObjectURL(blob);
+    pdfFrame.src = url;
+    pdfPreviewContainer.style.display="block";
 }
 
-// Download PDF
+// Download
 function downloadPDF(){
     const doc = createPDF();
     doc.save(`${currentStudent["Adm. No."]}-${currentStudent["STUDENT'S NAME"]}.pdf`);
