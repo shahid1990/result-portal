@@ -5,7 +5,6 @@
 <title>Result Portal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- jsPDF -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 <style>
@@ -19,37 +18,16 @@ body{
 .box{
     background:#fff;
     padding:25px;
-    max-width:420px;
+    max-width:600px;
     margin:auto;
     border-radius:15px;
     box-shadow:0 20px 40px rgba(0,0,0,0.25);
-    animation:fadeIn 0.6s ease;
 }
 
-@keyframes fadeIn{
-    from{opacity:0; transform:translateY(20px);}
-    to{opacity:1; transform:translateY(0);}
-}
+.header{text-align:center;margin-bottom:15px;}
+.header img{height:70px;}
 
-.header{
-    text-align:center;
-    margin-bottom:15px;
-}
-
-.header img{
-    height:70px;
-}
-
-.header div{
-    font-size:14px;
-    color:#555;
-}
-
-h2{
-    text-align:center;
-    color:#1e3c72;
-    margin-bottom:20px;
-}
+h2{text-align:center;color:#1e3c72;}
 
 input{
     width:100%;
@@ -57,64 +35,26 @@ input{
     font-size:16px;
     border-radius:8px;
     border:1px solid #ccc;
-    outline:none;
-    transition:0.3s;
-}
-
-input:focus{
-    border-color:#1e3c72;
-    box-shadow:0 0 0 3px rgba(30,60,114,0.15);
 }
 
 button{
     width:100%;
     padding:12px;
-    margin-top:15px;
+    margin-top:12px;
     font-size:16px;
     border:none;
     border-radius:8px;
     cursor:pointer;
     font-weight:600;
-    transition:0.3s;
 }
 
-button:hover{
-    transform:translateY(-2px);
-}
+.search-btn{background:#1e3c72;color:#fff;}
+.generate-btn{background:#2e8b57;color:#fff;}
 
-.search-btn{
-    background:#1e3c72;
-    color:#fff;
-}
-
-.search-btn:hover{
-    background:#16305c;
-}
-
-#pdfBtn{
-    background:#2e8b57;
-    color:#fff;
-    display:none;
-}
-
-#pdfBtn:hover{
-    background:#246b44;
-}
-
-#status{
-    margin-top:15px;
-    text-align:center;
-    font-weight:600;
-}
-
-#preview{
-    display:none;
-    margin-top:15px;
-    background:#f4f6fb;
-    padding:12px;
-    border-radius:8px;
-    font-size:14px;
-}
+#status{margin-top:15px;text-align:center;font-weight:600;}
+#preview{display:none;margin-top:15px;background:#f4f6fb;padding:12px;border-radius:8px;}
+#pdfPreviewContainer{display:none;margin-top:20px;}
+iframe{width:100%;height:600px;border:1px solid #ccc;border-radius:8px;}
 
 .footer{
     text-align:center;
@@ -130,7 +70,6 @@ button:hover{
 <div class="box">
 
     <div class="header">
-        <!-- replace logo.png with your logo -->
         <img src="image.jpeg">
         <div>Affiliated to CBSE</div>
     </div>
@@ -138,13 +77,17 @@ button:hover{
     <h2>Pre-Board Result (2025-26)</h2>
 
     <input id="admno" placeholder="Enter Admission Number">
-    <button class="search-btn" onclick="search()">🔍 Search Result</button>
+    <button class="search-btn" onclick="search()">Search Result</button>
 
     <div id="status"></div>
-
     <div id="preview"></div>
 
-    <button id="pdfBtn" onclick="generatePDF()">⬇ Download Result PDF</button>
+    <button id="generateBtn" class="generate-btn" style="display:none;" onclick="generatePDF()">Generate & Preview PDF</button>
+
+    <div id="pdfPreviewContainer">
+        <iframe id="pdfFrame"></iframe>
+        <button class="generate-btn" onclick="downloadPDF()">Download PDF</button>
+    </div>
 
 </div>
 
@@ -157,34 +100,35 @@ const { jsPDF } = window.jspdf;
 let students = [];
 let currentStudent = null;
 
-/* Load data */
+// Load JSON data
 fetch('data.json')
 .then(r=>r.json())
 .then(d=>students=d);
 
-/* Search student */
+// Search Function
 function search(){
     let adm = document.getElementById("admno").value.trim();
-    let st = students.find(s=>String(s["Adm. No."]).trim()===adm);
 
     if(!adm){
         document.getElementById("status").innerHTML =
-        `<span style="color:red;">❌ Please enter Admission Number</span>`;
+        "<span style='color:red;'>Please enter Admission Number</span>";
         return;
     }
 
+    let st = students.find(s=>String(s["Adm. No."]).trim()===adm);
+
     if(!st){
         document.getElementById("status").innerHTML =
-        `<span style="color:red;">❌ Admission Number Not Found</span>`;
+        "<span style='color:red;'>Admission Number Not Found</span>";
         document.getElementById("preview").style.display="none";
-        document.getElementById("pdfBtn").style.display="none";
+        document.getElementById("generateBtn").style.display="none";
         return;
     }
 
     currentStudent = st;
 
     document.getElementById("status").innerHTML =
-    `<span style="color:green;">✅ Result Found</span>`;
+    "<span style='color:green;'>Result Found</span>";
 
     document.getElementById("preview").style.display="block";
     document.getElementById("preview").innerHTML = `
@@ -193,11 +137,11 @@ function search(){
         <b>Roll No:</b> ${st["ROLL No."]}
     `;
 
-    document.getElementById("pdfBtn").style.display="block";
+    document.getElementById("generateBtn").style.display="block";
 }
 
-/* Generate PDF */
-function generatePDF(){
+// Create PDF Document
+function createPDF(){
     const s = currentStudent;
     const doc = new jsPDF("p","mm","a4");
     let y = 15;
@@ -207,13 +151,15 @@ function generatePDF(){
     doc.text("SACRED HEART SCHOOL",105,y,{align:"center"}); y+=7;
 
     doc.setFontSize(10);
+    doc.setFont("Times","Normal");
     doc.text("(Affiliated to CBSE, New Delhi)",105,y,{align:"center"}); y+=10;
 
     doc.setFontSize(13);
+    doc.setFont("Times","Bold");
     doc.text("PRE-BOARD EXAM RESULT (2025-26)",105,y,{align:"center"}); y+=12;
 
-    doc.setFontSize(11);
     doc.setFont("Times","Normal");
+    doc.setFontSize(11);
 
     doc.text(`Student Name : ${s["STUDENT'S NAME"]}`,20,y); y+=7;
     doc.text(`Father's Name : ${s["FATHER'S NAME"]}`,20,y); y+=7;
@@ -228,25 +174,42 @@ function generatePDF(){
     y+=3; doc.line(20,y,190,y); y+=6;
 
     doc.setFont("Times","Normal");
+
     function row(sub,full,marks){
         doc.text(sub,25,y);
-        doc.text(full,100,y,{align:"center"});
+        doc.text(String(full),100,y,{align:"center"});
         doc.text(String(marks),160,y,{align:"center"});
         y+=7;
     }
 
-    row("ENGLISH","80",s["ENGLISH (TH MAX-80)"]);
-    row("HINDI","80",s["HINDI(TH MAX-80)"]);
-    row("MATHS","80",s["MATHS(TH MAX-80)"]);
-    row("SCIENCE","80",s["SCIENCE(TH MAX-80)"]);
-    row("SOCIAL SCIENCE","80",s["SOCIAL SCIENCE(TH MAX-80)"]);
-    row("INFORMATION TECHNOLOGY","50",s["INFORMATION TECHNOLOGY(TH MAX-50)"]);
+    row("ENGLISH",80,s["ENGLISH (TH MAX-80)"]);
+    row("HINDI",80,s["HINDI(TH MAX-80)"]);
+    row("MATHS",80,s["MATHS(TH MAX-80)"]);
+    row("SCIENCE",80,s["SCIENCE(TH MAX-80)"]);
+    row("SOCIAL SCIENCE",80,s["SOCIAL SCIENCE(TH MAX-80)"]);
+    row("INFORMATION TECHNOLOGY",50,s["INFORMATION TECHNOLOGY(TH MAX-50)"]);
 
     y+=20;
     doc.text("Class Teacher's Sign",25,y);
     doc.text("Principal",150,y,{align:"center"});
 
-    doc.save(`${s["Adm. No."]}-${s["STUDENT'S NAME"]}.pdf`);
+    return doc;
+}
+
+// Generate & Preview
+function generatePDF(){
+    const doc = createPDF();
+    const pdfBlob = doc.output("blob");
+    const pdfURL = URL.createObjectURL(pdfBlob);
+
+    document.getElementById("pdfFrame").src = pdfURL;
+    document.getElementById("pdfPreviewContainer").style.display = "block";
+}
+
+// Download PDF
+function downloadPDF(){
+    const doc = createPDF();
+    doc.save(`${currentStudent["Adm. No."]}-${currentStudent["STUDENT'S NAME"]}.pdf`);
 }
 </script>
 
