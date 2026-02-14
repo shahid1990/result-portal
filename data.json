@@ -8,7 +8,7 @@
     "ROLL No.": "01",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "54",
-    "MATHS(TH MAX-80)": "78",
+    "MATHSS(TH MAX-80)": "78",
     "SCIENCE(TH MAX-80)": "71",
     "SOCIAL SCIENCE(TH MAX-80)": "74",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -22,7 +22,7 @@
     "ROLL No.": "02",
     "ENGLISH (TH MAX-80)": "55",
     "HINDI(TH MAX-80)": "61",
-    "MATHS(TH MAX-80)": "62",
+    "MATHSS(TH MAX-80)": "62",
     "SCIENCE(TH MAX-80)": "52",
     "SOCIAL SCIENCE(TH MAX-80)": "56",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -36,7 +36,7 @@
     "ROLL No.": "03",
     "ENGLISH (TH MAX-80)": "75",
     "HINDI(TH MAX-80)": "78",
-    "MATHS(TH MAX-80)": "76",
+    "MATHSS(TH MAX-80)": "76",
     "SCIENCE(TH MAX-80)": "72",
     "SOCIAL SCIENCE(TH MAX-80)": "72",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -50,7 +50,7 @@
     "ROLL No.": "04",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "76",
-    "MATHS(TH MAX-80)": "66",
+    "MATHSS(TH MAX-80)": "66",
     "SCIENCE(TH MAX-80)": "65",
     "SOCIAL SCIENCE(TH MAX-80)": "74",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "47"
@@ -64,7 +64,7 @@
     "ROLL No.": "05",
     "ENGLISH (TH MAX-80)": "71",
     "HINDI(TH MAX-80)": "64",
-    "MATHS(TH MAX-80)": "72",
+    "MATHSS(TH MAX-80)": "72",
     "SCIENCE(TH MAX-80)": "62",
     "SOCIAL SCIENCE(TH MAX-80)": "68",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -78,7 +78,7 @@
     "ROLL No.": "06",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "76",
-    "MATHS(TH MAX-80)": "54",
+    "MATHSS(TH MAX-80)": "54",
     "SCIENCE(TH MAX-80)": "58",
     "SOCIAL SCIENCE(TH MAX-80)": "74",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "42"
@@ -92,7 +92,7 @@
     "ROLL No.": "07",
     "ENGLISH (TH MAX-80)": "70",
     "HINDI(TH MAX-80)": "77",
-    "MATHS(TH MAX-80)": "70",
+    "MATHSS(TH MAX-80)": "70",
     "SCIENCE(TH MAX-80)": "68",
     "SOCIAL SCIENCE(TH MAX-80)": "57",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "37"
@@ -106,7 +106,7 @@
     "ROLL No.": "08",
     "ENGLISH (TH MAX-80)": "76",
     "HINDI(TH MAX-80)": "79",
-    "MATHS(TH MAX-80)": "57",
+    "MATHSS(TH MAX-80)": "57",
     "SCIENCE(TH MAX-80)": "71",
     "SOCIAL SCIENCE(TH MAX-80)": "73",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "42"
@@ -120,7 +120,7 @@
     "ROLL No.": "09",
     "ENGLISH (TH MAX-80)": "72",
     "HINDI(TH MAX-80)": "57",
-    "MATHS(TH MAX-80)": "74",
+    "MATHSS(TH MAX-80)": "74",
     "SCIENCE(TH MAX-80)": "67",
     "SOCIAL SCIENCE(TH MAX-80)": "75",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "37"
@@ -134,7 +134,7 @@
     "ROLL No.": "10",
     "ENGLISH (TH MAX-80)": "73",
     "HINDI(TH MAX-80)": "73",
-    "MATHS(TH MAX-80)": "51",
+    "MATHSS(TH MAX-80)": "51",
     "SCIENCE(TH MAX-80)": "70",
     "SOCIAL SCIENCE(TH MAX-80)": "75",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "45"
@@ -148,7 +148,7 @@
     "ROLL No.": "11",
     "ENGLISH (TH MAX-80)": "58",
     "HINDI(TH MAX-80)": "72",
-    "MATHS(TH MAX-80)": "63",
+    "MATHSS(TH MAX-80)": "63",
     "SCIENCE(TH MAX-80)": "70",
     "SOCIAL SCIENCE(TH MAX-80)": "62",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -162,7 +162,7 @@
     "ROLL No.": "12",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "76",
-    "MATHS(TH MAX-80)": "55",
+    "MATHSS(TH MAX-80)": "55",
     "SCIENCE(TH MAX-80)": "62",
     "SOCIAL SCIENCE(TH MAX-80)": "62",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -176,7 +176,7 @@
     "ROLL No.": "13",
     "ENGLISH (TH MAX-80)": "73",
     "HINDI(TH MAX-80)": "70",
-    "MATHS(TH MAX-80)": "49",
+    "MATHSS(TH MAX-80)": "49",
     "SCIENCE(TH MAX-80)": "67",
     "SOCIAL SCIENCE(TH MAX-80)": "68",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "33"
@@ -190,7 +190,7 @@
     "ROLL No.": "14",
     "ENGLISH (TH MAX-80)": "75",
     "HINDI(TH MAX-80)": "58",
-    "MATHS(TH MAX-80)": "25",
+    "MATHSS(TH MAX-80)": "25",
     "SCIENCE(TH MAX-80)": "55",
     "SOCIAL SCIENCE(TH MAX-80)": "63",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "36"
@@ -204,7 +204,7 @@
     "ROLL No.": "15",
     "ENGLISH (TH MAX-80)": "73",
     "HINDI(TH MAX-80)": "70",
-    "MATHS(TH MAX-80)": "54",
+    "MATHSS(TH MAX-80)": "54",
     "SCIENCE(TH MAX-80)": "63",
     "SOCIAL SCIENCE(TH MAX-80)": "64",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "35"
@@ -218,7 +218,7 @@
     "ROLL No.": "16",
     "ENGLISH (TH MAX-80)": "69",
     "HINDI(TH MAX-80)": "60",
-    "MATHS(TH MAX-80)": "39",
+    "MATHSS(TH MAX-80)": "39",
     "SCIENCE(TH MAX-80)": "58",
     "SOCIAL SCIENCE(TH MAX-80)": "71",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "36"
@@ -232,7 +232,7 @@
     "ROLL No.": "17",
     "ENGLISH (TH MAX-80)": "77",
     "HINDI(TH MAX-80)": "71",
-    "MATHS(TH MAX-80)": "61",
+    "MATHSS(TH MAX-80)": "61",
     "SCIENCE(TH MAX-80)": "66",
     "SOCIAL SCIENCE(TH MAX-80)": "72",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -246,7 +246,7 @@
     "ROLL No.": "18",
     "ENGLISH (TH MAX-80)": "74",
     "HINDI(TH MAX-80)": "65",
-    "MATHS(TH MAX-80)": "31",
+    "MATHSS(TH MAX-80)": "31",
     "SCIENCE(TH MAX-80)": "64",
     "SOCIAL SCIENCE(TH MAX-80)": "70",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -260,7 +260,7 @@
     "ROLL No.": "19",
     "ENGLISH (TH MAX-80)": "75",
     "HINDI(TH MAX-80)": "70",
-    "MATHS(TH MAX-80)": "63",
+    "MATHSS(TH MAX-80)": "63",
     "SCIENCE(TH MAX-80)": "64",
     "SOCIAL SCIENCE(TH MAX-80)": "68",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -274,7 +274,7 @@
     "ROLL No.": "20",
     "ENGLISH (TH MAX-80)": "74",
     "HINDI(TH MAX-80)": "65",
-    "MATHS(TH MAX-80)": "34",
+    "MATHSS(TH MAX-80)": "34",
     "SCIENCE(TH MAX-80)": "57",
     "SOCIAL SCIENCE(TH MAX-80)": "62",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -288,7 +288,7 @@
     "ROLL No.": "21",
     "ENGLISH (TH MAX-80)": "74",
     "HINDI(TH MAX-80)": "66",
-    "MATHS(TH MAX-80)": "42",
+    "MATHSS(TH MAX-80)": "42",
     "SCIENCE(TH MAX-80)": "60",
     "SOCIAL SCIENCE(TH MAX-80)": "72",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -302,7 +302,7 @@
     "ROLL No.": "22",
     "ENGLISH (TH MAX-80)": "72",
     "HINDI(TH MAX-80)": "61",
-    "MATHS(TH MAX-80)": "34",
+    "MATHSS(TH MAX-80)": "34",
     "SCIENCE(TH MAX-80)": "48",
     "SOCIAL SCIENCE(TH MAX-80)": "53",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "29"
@@ -316,7 +316,7 @@
     "ROLL No.": "23",
     "ENGLISH (TH MAX-80)": "67",
     "HINDI(TH MAX-80)": "71",
-    "MATHS(TH MAX-80)": "37",
+    "MATHSS(TH MAX-80)": "37",
     "SCIENCE(TH MAX-80)": "56",
     "SOCIAL SCIENCE(TH MAX-80)": "62",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "31"
@@ -330,7 +330,7 @@
     "ROLL No.": "24",
     "ENGLISH (TH MAX-80)": "65",
     "HINDI(TH MAX-80)": "74",
-    "MATHS(TH MAX-80)": "32",
+    "MATHSS(TH MAX-80)": "32",
     "SCIENCE(TH MAX-80)": "56",
     "SOCIAL SCIENCE(TH MAX-80)": "55",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "26"
@@ -344,7 +344,7 @@
     "ROLL No.": "25",
     "ENGLISH (TH MAX-80)": "63",
     "HINDI(TH MAX-80)": "63",
-    "MATHS(TH MAX-80)": "42",
+    "MATHSS(TH MAX-80)": "42",
     "SCIENCE(TH MAX-80)": "55",
     "SOCIAL SCIENCE(TH MAX-80)": "52",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -358,7 +358,7 @@
     "ROLL No.": "26",
     "ENGLISH (TH MAX-80)": "61",
     "HINDI(TH MAX-80)": "54",
-    "MATHS(TH MAX-80)": "33",
+    "MATHSS(TH MAX-80)": "33",
     "SCIENCE(TH MAX-80)": "53",
     "SOCIAL SCIENCE(TH MAX-80)": "69",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "26"
@@ -372,7 +372,7 @@
     "ROLL No.": "27",
     "ENGLISH (TH MAX-80)": "77",
     "HINDI(TH MAX-80)": "58",
-    "MATHS(TH MAX-80)": "44",
+    "MATHSS(TH MAX-80)": "44",
     "SCIENCE(TH MAX-80)": "48",
     "SOCIAL SCIENCE(TH MAX-80)": "49",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -386,7 +386,7 @@
     "ROLL No.": "28",
     "ENGLISH (TH MAX-80)": "64",
     "HINDI(TH MAX-80)": "60",
-    "MATHS(TH MAX-80)": "36",
+    "MATHSS(TH MAX-80)": "36",
     "SCIENCE(TH MAX-80)": "46",
     "SOCIAL SCIENCE(TH MAX-80)": "56",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "25"
@@ -400,7 +400,7 @@
     "ROLL No.": "29",
     "ENGLISH (TH MAX-80)": "60",
     "HINDI(TH MAX-80)": "67",
-    "MATHS(TH MAX-80)": "32",
+    "MATHSS(TH MAX-80)": "32",
     "SCIENCE(TH MAX-80)": "54",
     "SOCIAL SCIENCE(TH MAX-80)": "50",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -414,7 +414,7 @@
     "ROLL No.": "30",
     "ENGLISH (TH MAX-80)": "69",
     "HINDI(TH MAX-80)": "55",
-    "MATHS(TH MAX-80)": "28",
+    "MATHSS(TH MAX-80)": "28",
     "SCIENCE(TH MAX-80)": "55",
     "SOCIAL SCIENCE(TH MAX-80)": "57",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "22"
@@ -428,7 +428,7 @@
     "ROLL No.": "31",
     "ENGLISH (TH MAX-80)": "66",
     "HINDI(TH MAX-80)": "66",
-    "MATHS(TH MAX-80)": "35",
+    "MATHSS(TH MAX-80)": "35",
     "SCIENCE(TH MAX-80)": "60",
     "SOCIAL SCIENCE(TH MAX-80)": "56",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "17"
@@ -442,7 +442,7 @@
     "ROLL No.": "32",
     "ENGLISH (TH MAX-80)": "69",
     "HINDI(TH MAX-80)": "63",
-    "MATHS(TH MAX-80)": "31",
+    "MATHSS(TH MAX-80)": "31",
     "SCIENCE(TH MAX-80)": "57",
     "SOCIAL SCIENCE(TH MAX-80)": "59",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -456,7 +456,7 @@
     "ROLL No.": "33",
     "ENGLISH (TH MAX-80)": "68",
     "HINDI(TH MAX-80)": "50",
-    "MATHS(TH MAX-80)": "38",
+    "MATHSS(TH MAX-80)": "38",
     "SCIENCE(TH MAX-80)": "36",
     "SOCIAL SCIENCE(TH MAX-80)": "56",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "31"
@@ -470,7 +470,7 @@
     "ROLL No.": "34",
     "ENGLISH (TH MAX-80)": "48",
     "HINDI(TH MAX-80)": "44",
-    "MATHS(TH MAX-80)": "38",
+    "MATHSS(TH MAX-80)": "38",
     "SCIENCE(TH MAX-80)": "47",
     "SOCIAL SCIENCE(TH MAX-80)": "36",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "27"
@@ -484,7 +484,7 @@
     "ROLL No.": "35",
     "ENGLISH (TH MAX-80)": "70",
     "HINDI(TH MAX-80)": "54",
-    "MATHS(TH MAX-80)": "50",
+    "MATHSS(TH MAX-80)": "50",
     "SCIENCE(TH MAX-80)": "43",
     "SOCIAL SCIENCE(TH MAX-80)": "64",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "26"
@@ -498,7 +498,7 @@
     "ROLL No.": "36",
     "ENGLISH (TH MAX-80)": "56",
     "HINDI(TH MAX-80)": "57",
-    "MATHS(TH MAX-80)": "21",
+    "MATHSS(TH MAX-80)": "21",
     "SCIENCE(TH MAX-80)": "44",
     "SOCIAL SCIENCE(TH MAX-80)": "43",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -512,7 +512,7 @@
     "ROLL No.": "37",
     "ENGLISH (TH MAX-80)": "73",
     "HINDI(TH MAX-80)": "49",
-    "MATHS(TH MAX-80)": "42",
+    "MATHSS(TH MAX-80)": "42",
     "SCIENCE(TH MAX-80)": "43",
     "SOCIAL SCIENCE(TH MAX-80)": "55",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "24"
@@ -526,7 +526,7 @@
     "ROLL No.": "38",
     "ENGLISH (TH MAX-80)": "51",
     "HINDI(TH MAX-80)": "54",
-    "MATHS(TH MAX-80)": "38",
+    "MATHSS(TH MAX-80)": "38",
     "SCIENCE(TH MAX-80)": "49",
     "SOCIAL SCIENCE(TH MAX-80)": "42",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "27"
@@ -540,7 +540,7 @@
     "ROLL No.": "39",
     "ENGLISH (TH MAX-80)": "74",
     "HINDI(TH MAX-80)": "51",
-    "MATHS(TH MAX-80)": "37",
+    "MATHSS(TH MAX-80)": "37",
     "SCIENCE(TH MAX-80)": "39",
     "SOCIAL SCIENCE(TH MAX-80)": "58",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "18"
@@ -554,7 +554,7 @@
     "ROLL No.": "40",
     "ENGLISH (TH MAX-80)": "53",
     "HINDI(TH MAX-80)": "47",
-    "MATHS(TH MAX-80)": "26",
+    "MATHSS(TH MAX-80)": "26",
     "SCIENCE(TH MAX-80)": "42",
     "SOCIAL SCIENCE(TH MAX-80)": "51",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "28"
@@ -568,7 +568,7 @@
     "ROLL No.": "41",
     "ENGLISH (TH MAX-80)": "54",
     "HINDI(TH MAX-80)": "47",
-    "MATHS(TH MAX-80)": "50",
+    "MATHSS(TH MAX-80)": "50",
     "SCIENCE(TH MAX-80)": "43",
     "SOCIAL SCIENCE(TH MAX-80)": "53",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "14"
@@ -582,7 +582,7 @@
     "ROLL No.": "42",
     "ENGLISH (TH MAX-80)": "40",
     "HINDI(TH MAX-80)": "43",
-    "MATHS(TH MAX-80)": "50",
+    "MATHSS(TH MAX-80)": "50",
     "SCIENCE(TH MAX-80)": "42",
     "SOCIAL SCIENCE(TH MAX-80)": "30",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "23"
@@ -596,7 +596,7 @@
     "ROLL No.": "43",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "",
-    "MATHS(TH MAX-80)": "37",
+    "MATHSS(TH MAX-80)": "37",
     "SCIENCE(TH MAX-80)": "48",
     "SOCIAL SCIENCE(TH MAX-80)": "46",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "22"
@@ -610,7 +610,7 @@
     "ROLL No.": "44",
     "ENGLISH (TH MAX-80)": "76",
     "HINDI(TH MAX-80)": "62",
-    "MATHS(TH MAX-80)": "41",
+    "MATHSS(TH MAX-80)": "41",
     "SCIENCE(TH MAX-80)": "55",
     "SOCIAL SCIENCE(TH MAX-80)": "43",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "28"
@@ -624,7 +624,7 @@
     "ROLL No.": "45",
     "ENGLISH (TH MAX-80)": "64",
     "HINDI(TH MAX-80)": "44",
-    "MATHS(TH MAX-80)": "43",
+    "MATHSS(TH MAX-80)": "43",
     "SCIENCE(TH MAX-80)": "43",
     "SOCIAL SCIENCE(TH MAX-80)": "39",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "23"
@@ -638,7 +638,7 @@
     "ROLL No.": "46",
     "ENGLISH (TH MAX-80)": "61",
     "HINDI(TH MAX-80)": "",
-    "MATHS(TH MAX-80)": "39",
+    "MATHSS(TH MAX-80)": "39",
     "SCIENCE(TH MAX-80)": "48",
     "SOCIAL SCIENCE(TH MAX-80)": "32",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "28"
@@ -652,7 +652,7 @@
     "ROLL No.": "47",
     "ENGLISH (TH MAX-80)": "63",
     "HINDI(TH MAX-80)": "49",
-    "MATHS(TH MAX-80)": "31",
+    "MATHSS(TH MAX-80)": "31",
     "SCIENCE(TH MAX-80)": "35",
     "SOCIAL SCIENCE(TH MAX-80)": "51",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "32"
@@ -666,7 +666,7 @@
     "ROLL No.": "48",
     "ENGLISH (TH MAX-80)": "45",
     "HINDI(TH MAX-80)": "41",
-    "MATHS(TH MAX-80)": "33",
+    "MATHSS(TH MAX-80)": "33",
     "SCIENCE(TH MAX-80)": "49",
     "SOCIAL SCIENCE(TH MAX-80)": "46",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "29"
@@ -680,7 +680,7 @@
     "ROLL No.": "49",
     "ENGLISH (TH MAX-80)": "70",
     "HINDI(TH MAX-80)": "61",
-    "MATHS(TH MAX-80)": "40",
+    "MATHSS(TH MAX-80)": "40",
     "SCIENCE(TH MAX-80)": "37",
     "SOCIAL SCIENCE(TH MAX-80)": "63",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "23"
@@ -694,7 +694,7 @@
     "ROLL No.": "50",
     "ENGLISH (TH MAX-80)": "45",
     "HINDI(TH MAX-80)": "33",
-    "MATHS(TH MAX-80)": "40",
+    "MATHSS(TH MAX-80)": "40",
     "SCIENCE(TH MAX-80)": "37",
     "SOCIAL SCIENCE(TH MAX-80)": "36",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "25"
@@ -708,7 +708,7 @@
     "ROLL No.": "51",
     "ENGLISH (TH MAX-80)": "65",
     "HINDI(TH MAX-80)": "45",
-    "MATHS(TH MAX-80)": "41",
+    "MATHSS(TH MAX-80)": "41",
     "SCIENCE(TH MAX-80)": "42",
     "SOCIAL SCIENCE(TH MAX-80)": "50",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "21"
@@ -722,7 +722,7 @@
     "ROLL No.": "52",
     "ENGLISH (TH MAX-80)": "70",
     "HINDI(TH MAX-80)": "68",
-    "MATHS(TH MAX-80)": "31",
+    "MATHSS(TH MAX-80)": "31",
     "SCIENCE(TH MAX-80)": "60",
     "SOCIAL SCIENCE(TH MAX-80)": "60",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "32"
@@ -736,7 +736,7 @@
     "ROLL No.": "53",
     "ENGLISH (TH MAX-80)": "63",
     "HINDI(TH MAX-80)": "41",
-    "MATHS(TH MAX-80)": "39",
+    "MATHSS(TH MAX-80)": "39",
     "SCIENCE(TH MAX-80)": "42",
     "SOCIAL SCIENCE(TH MAX-80)": "44",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "18"
@@ -750,7 +750,7 @@
     "ROLL No.": "54",
     "ENGLISH (TH MAX-80)": "73",
     "HINDI(TH MAX-80)": "50",
-    "MATHS(TH MAX-80)": "30",
+    "MATHSS(TH MAX-80)": "30",
     "SCIENCE(TH MAX-80)": "37",
     "SOCIAL SCIENCE(TH MAX-80)": "51",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -764,7 +764,7 @@
     "ROLL No.": "55",
     "ENGLISH (TH MAX-80)": "71",
     "HINDI(TH MAX-80)": "59",
-    "MATHS(TH MAX-80)": "40",
+    "MATHSS(TH MAX-80)": "40",
     "SCIENCE(TH MAX-80)": "57",
     "SOCIAL SCIENCE(TH MAX-80)": "60",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "21"
@@ -778,7 +778,7 @@
     "ROLL No.": "56",
     "ENGLISH (TH MAX-80)": "40",
     "HINDI(TH MAX-80)": "40",
-    "MATHS(TH MAX-80)": "38",
+    "MATHSS(TH MAX-80)": "38",
     "SCIENCE(TH MAX-80)": "38",
     "SOCIAL SCIENCE(TH MAX-80)": "44",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "22"
@@ -792,7 +792,7 @@
     "ROLL No.": "57",
     "ENGLISH (TH MAX-80)": "50",
     "HINDI(TH MAX-80)": "46",
-    "MATHS(TH MAX-80)": "41",
+    "MATHSS(TH MAX-80)": "41",
     "SCIENCE(TH MAX-80)": "30",
     "SOCIAL SCIENCE(TH MAX-80)": "28",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "14"
@@ -806,7 +806,7 @@
     "ROLL No.": "58",
     "ENGLISH (TH MAX-80)": "45",
     "HINDI(TH MAX-80)": "33",
-    "MATHS(TH MAX-80)": "36",
+    "MATHSS(TH MAX-80)": "36",
     "SCIENCE(TH MAX-80)": "36",
     "SOCIAL SCIENCE(TH MAX-80)": "45",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "19"
@@ -820,7 +820,7 @@
     "ROLL No.": "59",
     "ENGLISH (TH MAX-80)": "46",
     "HINDI(TH MAX-80)": "56",
-    "MATHS(TH MAX-80)": "36",
+    "MATHSS(TH MAX-80)": "36",
     "SCIENCE(TH MAX-80)": "32",
     "SOCIAL SCIENCE(TH MAX-80)": "43",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "16"
@@ -834,7 +834,7 @@
     "ROLL No.": "60",
     "ENGLISH (TH MAX-80)": "53",
     "HINDI(TH MAX-80)": "38",
-    "MATHS(TH MAX-80)": "22",
+    "MATHSS(TH MAX-80)": "22",
     "SCIENCE(TH MAX-80)": "33",
     "SOCIAL SCIENCE(TH MAX-80)": "32",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "18"
@@ -848,7 +848,7 @@
     "ROLL No.": "61",
     "ENGLISH (TH MAX-80)": "53",
     "HINDI(TH MAX-80)": "41",
-    "MATHS(TH MAX-80)": "34",
+    "MATHSS(TH MAX-80)": "34",
     "SCIENCE(TH MAX-80)": "45",
     "SOCIAL SCIENCE(TH MAX-80)": "33",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "25"
@@ -862,7 +862,7 @@
     "ROLL No.": "62",
     "ENGLISH (TH MAX-80)": "50",
     "HINDI(TH MAX-80)": "47",
-    "MATHS(TH MAX-80)": "37",
+    "MATHSS(TH MAX-80)": "37",
     "SCIENCE(TH MAX-80)": "30",
     "SOCIAL SCIENCE(TH MAX-80)": "46",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "21"
@@ -876,7 +876,7 @@
     "ROLL No.": "63",
     "ENGLISH (TH MAX-80)": "43",
     "HINDI(TH MAX-80)": "36",
-    "MATHS(TH MAX-80)": "43",
+    "MATHSS(TH MAX-80)": "43",
     "SCIENCE(TH MAX-80)": "26",
     "SOCIAL SCIENCE(TH MAX-80)": "37",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "12"
@@ -890,7 +890,7 @@
     "ROLL No.": "64",
     "ENGLISH (TH MAX-80)": "42",
     "HINDI(TH MAX-80)": "33",
-    "MATHS(TH MAX-80)": "46",
+    "MATHSS(TH MAX-80)": "46",
     "SCIENCE(TH MAX-80)": "29",
     "SOCIAL SCIENCE(TH MAX-80)": "28",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "13"
@@ -904,7 +904,7 @@
     "ROLL No.": "65",
     "ENGLISH (TH MAX-80)": "50",
     "HINDI(TH MAX-80)": "43",
-    "MATHS(TH MAX-80)": "37",
+    "MATHSS(TH MAX-80)": "37",
     "SCIENCE(TH MAX-80)": "35",
     "SOCIAL SCIENCE(TH MAX-80)": "38",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "21"
@@ -918,7 +918,7 @@
     "ROLL No.": "66",
     "ENGLISH (TH MAX-80)": "67",
     "HINDI(TH MAX-80)": "54",
-    "MATHS(TH MAX-80)": "32",
+    "MATHSS(TH MAX-80)": "32",
     "SCIENCE(TH MAX-80)": "46",
     "SOCIAL SCIENCE(TH MAX-80)": "58",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "24"
@@ -932,7 +932,7 @@
     "ROLL No.": "67",
     "ENGLISH (TH MAX-80)": "76",
     "HINDI(TH MAX-80)": "73",
-    "MATHS(TH MAX-80)": "37",
+    "MATHSS(TH MAX-80)": "37",
     "SCIENCE(TH MAX-80)": "55",
     "SOCIAL SCIENCE(TH MAX-80)": "65",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "33"
@@ -946,7 +946,7 @@
     "ROLL No.": "01",
     "ENGLISH (TH MAX-80)": "38",
     "HINDI(TH MAX-80)": "49",
-    "MATHS(TH MAX-80)": "27",
+    "MATHSS(TH MAX-80)": "27",
     "SCIENCE(TH MAX-80)": "31",
     "SOCIAL SCIENCE(TH MAX-80)": "",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "37"
@@ -960,7 +960,7 @@
     "ROLL No.": "02",
     "ENGLISH (TH MAX-80)": "38",
     "HINDI(TH MAX-80)": "47",
-    "MATHS(TH MAX-80)": "21",
+    "MATHSS(TH MAX-80)": "21",
     "SCIENCE(TH MAX-80)": "40",
     "SOCIAL SCIENCE(TH MAX-80)": "57",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "22"
@@ -974,7 +974,7 @@
     "ROLL No.": "03",
     "ENGLISH (TH MAX-80)": "69",
     "HINDI(TH MAX-80)": "57",
-    "MATHS(TH MAX-80)": "20",
+    "MATHSS(TH MAX-80)": "20",
     "SCIENCE(TH MAX-80)": "39",
     "SOCIAL SCIENCE(TH MAX-80)": "58",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "32"
@@ -988,7 +988,7 @@
     "ROLL No.": "04",
     "ENGLISH (TH MAX-80)": "54",
     "HINDI(TH MAX-80)": "71",
-    "MATHS(TH MAX-80)": "44",
+    "MATHSS(TH MAX-80)": "44",
     "SCIENCE(TH MAX-80)": "49",
     "SOCIAL SCIENCE(TH MAX-80)": "",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -1002,7 +1002,7 @@
     "ROLL No.": "05",
     "ENGLISH (TH MAX-80)": "43",
     "HINDI(TH MAX-80)": "44",
-    "MATHS(TH MAX-80)": "28",
+    "MATHSS(TH MAX-80)": "28",
     "SCIENCE(TH MAX-80)": "28",
     "SOCIAL SCIENCE(TH MAX-80)": "39",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "36"
@@ -1016,7 +1016,7 @@
     "ROLL No.": "06",
     "ENGLISH (TH MAX-80)": "53",
     "HINDI(TH MAX-80)": "64",
-    "MATHS(TH MAX-80)": "37",
+    "MATHSS(TH MAX-80)": "37",
     "SCIENCE(TH MAX-80)": "32",
     "SOCIAL SCIENCE(TH MAX-80)": "49",
     "INFORMATION TECHNOLOGY(TH MAX-50)": ""
@@ -1030,7 +1030,7 @@
     "ROLL No.": "07",
     "ENGLISH (TH MAX-80)": "35",
     "HINDI(TH MAX-80)": "46",
-    "MATHS(TH MAX-80)": "19",
+    "MATHSS(TH MAX-80)": "19",
     "SCIENCE(TH MAX-80)": "24",
     "SOCIAL SCIENCE(TH MAX-80)": "31",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "31"
@@ -1044,7 +1044,7 @@
     "ROLL No.": "08",
     "ENGLISH (TH MAX-80)": "57",
     "HINDI(TH MAX-80)": "46",
-    "MATHS(TH MAX-80)": "29",
+    "MATHSS(TH MAX-80)": "29",
     "SCIENCE(TH MAX-80)": "34",
     "SOCIAL SCIENCE(TH MAX-80)": "54",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -1058,7 +1058,7 @@
     "ROLL No.": "09",
     "ENGLISH (TH MAX-80)": "56",
     "HINDI(TH MAX-80)": "60",
-    "MATHS(TH MAX-80)": "20",
+    "MATHSS(TH MAX-80)": "20",
     "SCIENCE(TH MAX-80)": "35",
     "SOCIAL SCIENCE(TH MAX-80)": "56",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "26"
@@ -1072,7 +1072,7 @@
     "ROLL No.": "10",
     "ENGLISH (TH MAX-80)": "58",
     "HINDI(TH MAX-80)": "43",
-    "MATHS(TH MAX-80)": "35",
+    "MATHSS(TH MAX-80)": "35",
     "SCIENCE(TH MAX-80)": "45",
     "SOCIAL SCIENCE(TH MAX-80)": "51",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "40"
@@ -1086,7 +1086,7 @@
     "ROLL No.": "11",
     "ENGLISH (TH MAX-80)": "65",
     "HINDI(TH MAX-80)": "60",
-    "MATHS(TH MAX-80)": "20",
+    "MATHSS(TH MAX-80)": "20",
     "SCIENCE(TH MAX-80)": "37",
     "SOCIAL SCIENCE(TH MAX-80)": "59",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "20"
@@ -1100,7 +1100,7 @@
     "ROLL No.": "12",
     "ENGLISH (TH MAX-80)": "41",
     "HINDI(TH MAX-80)": "57",
-    "MATHS(TH MAX-80)": "27",
+    "MATHSS(TH MAX-80)": "27",
     "SCIENCE(TH MAX-80)": "45",
     "SOCIAL SCIENCE(TH MAX-80)": "51",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "32"
@@ -1114,7 +1114,7 @@
     "ROLL No.": "13",
     "ENGLISH (TH MAX-80)": "53",
     "HINDI(TH MAX-80)": "48",
-    "MATHS(TH MAX-80)": "22",
+    "MATHSS(TH MAX-80)": "22",
     "SCIENCE(TH MAX-80)": "18",
     "SOCIAL SCIENCE(TH MAX-80)": "46",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "9"
@@ -1128,7 +1128,7 @@
     "ROLL No.": "14",
     "ENGLISH (TH MAX-80)": "54",
     "HINDI(TH MAX-80)": "44",
-    "MATHS(TH MAX-80)": "33",
+    "MATHSS(TH MAX-80)": "33",
     "SCIENCE(TH MAX-80)": "44",
     "SOCIAL SCIENCE(TH MAX-80)": "49",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -1142,7 +1142,7 @@
     "ROLL No.": "15",
     "ENGLISH (TH MAX-80)": "47",
     "HINDI(TH MAX-80)": "33",
-    "MATHS(TH MAX-80)": "17",
+    "MATHSS(TH MAX-80)": "17",
     "SCIENCE(TH MAX-80)": "12",
     "SOCIAL SCIENCE(TH MAX-80)": "43",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "31"
@@ -1156,7 +1156,7 @@
     "ROLL No.": "16",
     "ENGLISH (TH MAX-80)": "55",
     "HINDI(TH MAX-80)": "36",
-    "MATHS(TH MAX-80)": "36",
+    "MATHSS(TH MAX-80)": "36",
     "SCIENCE(TH MAX-80)": "40",
     "SOCIAL SCIENCE(TH MAX-80)": "46",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "25"
@@ -1170,7 +1170,7 @@
     "ROLL No.": "17",
     "ENGLISH (TH MAX-80)": "45",
     "HINDI(TH MAX-80)": "57",
-    "MATHS(TH MAX-80)": "25",
+    "MATHSS(TH MAX-80)": "25",
     "SCIENCE(TH MAX-80)": "27",
     "SOCIAL SCIENCE(TH MAX-80)": "41",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "13"
@@ -1184,7 +1184,7 @@
     "ROLL No.": "18",
     "ENGLISH (TH MAX-80)": "50",
     "HINDI(TH MAX-80)": "57",
-    "MATHS(TH MAX-80)": "23",
+    "MATHSS(TH MAX-80)": "23",
     "SCIENCE(TH MAX-80)": "43",
     "SOCIAL SCIENCE(TH MAX-80)": "47",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "39"
@@ -1198,7 +1198,7 @@
     "ROLL No.": "19",
     "ENGLISH (TH MAX-80)": "51",
     "HINDI(TH MAX-80)": "54",
-    "MATHS(TH MAX-80)": "13",
+    "MATHSS(TH MAX-80)": "13",
     "SCIENCE(TH MAX-80)": "33",
     "SOCIAL SCIENCE(TH MAX-80)": "67",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "14"
@@ -1212,7 +1212,7 @@
     "ROLL No.": "20",
     "ENGLISH (TH MAX-80)": "48",
     "HINDI(TH MAX-80)": "48",
-    "MATHS(TH MAX-80)": "24",
+    "MATHSS(TH MAX-80)": "24",
     "SCIENCE(TH MAX-80)": "27",
     "SOCIAL SCIENCE(TH MAX-80)": "44",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "20"
@@ -1226,7 +1226,7 @@
     "ROLL No.": "21",
     "ENGLISH (TH MAX-80)": "39",
     "HINDI(TH MAX-80)": "36",
-    "MATHS(TH MAX-80)": "13",
+    "MATHSS(TH MAX-80)": "13",
     "SCIENCE(TH MAX-80)": "14",
     "SOCIAL SCIENCE(TH MAX-80)": "33",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "31"
@@ -1240,7 +1240,7 @@
     "ROLL No.": "22",
     "ENGLISH (TH MAX-80)": "29",
     "HINDI(TH MAX-80)": "28",
-    "MATHS(TH MAX-80)": "30",
+    "MATHSS(TH MAX-80)": "30",
     "SCIENCE(TH MAX-80)": "29",
     "SOCIAL SCIENCE(TH MAX-80)": "34",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "29"
@@ -1254,7 +1254,7 @@
     "ROLL No.": "23",
     "ENGLISH (TH MAX-80)": "59",
     "HINDI(TH MAX-80)": "53",
-    "MATHS(TH MAX-80)": "30",
+    "MATHSS(TH MAX-80)": "30",
     "SCIENCE(TH MAX-80)": "38",
     "SOCIAL SCIENCE(TH MAX-80)": "52",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "16"
@@ -1268,7 +1268,7 @@
     "ROLL No.": "24",
     "ENGLISH (TH MAX-80)": "42",
     "HINDI(TH MAX-80)": "49",
-    "MATHS(TH MAX-80)": "28",
+    "MATHSS(TH MAX-80)": "28",
     "SCIENCE(TH MAX-80)": "44",
     "SOCIAL SCIENCE(TH MAX-80)": "51",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "33"
@@ -1282,7 +1282,7 @@
     "ROLL No.": "25",
     "ENGLISH (TH MAX-80)": "40",
     "HINDI(TH MAX-80)": "50",
-    "MATHS(TH MAX-80)": "33",
+    "MATHSS(TH MAX-80)": "33",
     "SCIENCE(TH MAX-80)": "28",
     "SOCIAL SCIENCE(TH MAX-80)": "37",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "16"
@@ -1296,7 +1296,7 @@
     "ROLL No.": "26",
     "ENGLISH (TH MAX-80)": "40",
     "HINDI(TH MAX-80)": "58",
-    "MATHS(TH MAX-80)": "32",
+    "MATHSS(TH MAX-80)": "32",
     "SCIENCE(TH MAX-80)": "28",
     "SOCIAL SCIENCE(TH MAX-80)": "41",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "25"
@@ -1310,7 +1310,7 @@
     "ROLL No.": "27",
     "ENGLISH (TH MAX-80)": "52",
     "HINDI(TH MAX-80)": "33",
-    "MATHS(TH MAX-80)": "27",
+    "MATHSS(TH MAX-80)": "27",
     "SCIENCE(TH MAX-80)": "22",
     "SOCIAL SCIENCE(TH MAX-80)": "40",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "29"
@@ -1324,7 +1324,7 @@
     "ROLL No.": "28",
     "ENGLISH (TH MAX-80)": "46",
     "HINDI(TH MAX-80)": "35",
-    "MATHS(TH MAX-80)": "26",
+    "MATHSS(TH MAX-80)": "26",
     "SCIENCE(TH MAX-80)": "30",
     "SOCIAL SCIENCE(TH MAX-80)": "39",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -1338,7 +1338,7 @@
     "ROLL No.": "29",
     "ENGLISH (TH MAX-80)": "36",
     "HINDI(TH MAX-80)": "48",
-    "MATHS(TH MAX-80)": "26",
+    "MATHSS(TH MAX-80)": "26",
     "SCIENCE(TH MAX-80)": "23",
     "SOCIAL SCIENCE(TH MAX-80)": "23",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "37"
@@ -1352,7 +1352,7 @@
     "ROLL No.": "30",
     "ENGLISH (TH MAX-80)": "50",
     "HINDI(TH MAX-80)": "44",
-    "MATHS(TH MAX-80)": "24",
+    "MATHSS(TH MAX-80)": "24",
     "SCIENCE(TH MAX-80)": "27",
     "SOCIAL SCIENCE(TH MAX-80)": "34",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "23"
@@ -1366,7 +1366,7 @@
     "ROLL No.": "31",
     "ENGLISH (TH MAX-80)": "46",
     "HINDI(TH MAX-80)": "31",
-    "MATHS(TH MAX-80)": "21",
+    "MATHSS(TH MAX-80)": "21",
     "SCIENCE(TH MAX-80)": "29",
     "SOCIAL SCIENCE(TH MAX-80)": "29",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "11"
@@ -1380,7 +1380,7 @@
     "ROLL No.": "32",
     "ENGLISH (TH MAX-80)": "43",
     "HINDI(TH MAX-80)": "43",
-    "MATHS(TH MAX-80)": "28",
+    "MATHSS(TH MAX-80)": "28",
     "SCIENCE(TH MAX-80)": "32",
     "SOCIAL SCIENCE(TH MAX-80)": "39",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "26"
@@ -1394,7 +1394,7 @@
     "ROLL No.": "33",
     "ENGLISH (TH MAX-80)": "64",
     "HINDI(TH MAX-80)": "44",
-    "MATHS(TH MAX-80)": "37",
+    "MATHSS(TH MAX-80)": "37",
     "SCIENCE(TH MAX-80)": "30",
     "SOCIAL SCIENCE(TH MAX-80)": "56",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "17"
@@ -1408,7 +1408,7 @@
     "ROLL No.": "34",
     "ENGLISH (TH MAX-80)": "36",
     "HINDI(TH MAX-80)": "31",
-    "MATHS(TH MAX-80)": "28",
+    "MATHSS(TH MAX-80)": "28",
     "SCIENCE(TH MAX-80)": "20",
     "SOCIAL SCIENCE(TH MAX-80)": "25",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "32"
@@ -1422,7 +1422,7 @@
     "ROLL No.": "35",
     "ENGLISH (TH MAX-80)": "44",
     "HINDI(TH MAX-80)": "51",
-    "MATHS(TH MAX-80)": "30",
+    "MATHSS(TH MAX-80)": "30",
     "SCIENCE(TH MAX-80)": "22",
     "SOCIAL SCIENCE(TH MAX-80)": "28",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "24"
@@ -1436,7 +1436,7 @@
     "ROLL No.": "36",
     "ENGLISH (TH MAX-80)": "35",
     "HINDI(TH MAX-80)": "38",
-    "MATHS(TH MAX-80)": "29",
+    "MATHSS(TH MAX-80)": "29",
     "SCIENCE(TH MAX-80)": "28",
     "SOCIAL SCIENCE(TH MAX-80)": "22",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "27"
@@ -1450,7 +1450,7 @@
     "ROLL No.": "37",
     "ENGLISH (TH MAX-80)": "50",
     "HINDI(TH MAX-80)": "49",
-    "MATHS(TH MAX-80)": "23",
+    "MATHSS(TH MAX-80)": "23",
     "SCIENCE(TH MAX-80)": "47",
     "SOCIAL SCIENCE(TH MAX-80)": "53",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "37"
@@ -1464,7 +1464,7 @@
     "ROLL No.": "38",
     "ENGLISH (TH MAX-80)": "31",
     "HINDI(TH MAX-80)": "37",
-    "MATHS(TH MAX-80)": "16",
+    "MATHSS(TH MAX-80)": "16",
     "SCIENCE(TH MAX-80)": "46",
     "SOCIAL SCIENCE(TH MAX-80)": "33",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "16"
@@ -1478,7 +1478,7 @@
     "ROLL No.": "39",
     "ENGLISH (TH MAX-80)": "46",
     "HINDI(TH MAX-80)": "33",
-    "MATHS(TH MAX-80)": "24",
+    "MATHSS(TH MAX-80)": "24",
     "SCIENCE(TH MAX-80)": "30",
     "SOCIAL SCIENCE(TH MAX-80)": "48",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "13"
@@ -1492,7 +1492,7 @@
     "ROLL No.": "40",
     "ENGLISH (TH MAX-80)": "27",
     "HINDI(TH MAX-80)": "36",
-    "MATHS(TH MAX-80)": "34",
+    "MATHSS(TH MAX-80)": "34",
     "SCIENCE(TH MAX-80)": "39",
     "SOCIAL SCIENCE(TH MAX-80)": "29",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "21"
@@ -1506,7 +1506,7 @@
     "ROLL No.": "41",
     "ENGLISH (TH MAX-80)": "71",
     "HINDI(TH MAX-80)": "67",
-    "MATHS(TH MAX-80)": "77",
+    "MATHSS(TH MAX-80)": "77",
     "SCIENCE(TH MAX-80)": "59",
     "SOCIAL SCIENCE(TH MAX-80)": "75",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "32"
@@ -1520,7 +1520,7 @@
     "ROLL No.": "42",
     "ENGLISH (TH MAX-80)": "36",
     "HINDI(TH MAX-80)": "35",
-    "MATHS(TH MAX-80)": "12",
+    "MATHSS(TH MAX-80)": "12",
     "SCIENCE(TH MAX-80)": "34",
     "SOCIAL SCIENCE(TH MAX-80)": "31",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "12"
@@ -1534,7 +1534,7 @@
     "ROLL No.": "43",
     "ENGLISH (TH MAX-80)": "62",
     "HINDI(TH MAX-80)": "66",
-    "MATHS(TH MAX-80)": "33",
+    "MATHSS(TH MAX-80)": "33",
     "SCIENCE(TH MAX-80)": "62",
     "SOCIAL SCIENCE(TH MAX-80)": "62",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "26"
@@ -1548,7 +1548,7 @@
     "ROLL No.": "44",
     "ENGLISH (TH MAX-80)": "63",
     "HINDI(TH MAX-80)": "64",
-    "MATHS(TH MAX-80)": "31",
+    "MATHSS(TH MAX-80)": "31",
     "SCIENCE(TH MAX-80)": "60",
     "SOCIAL SCIENCE(TH MAX-80)": "58",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -1562,7 +1562,7 @@
     "ROLL No.": "45",
     "ENGLISH (TH MAX-80)": "48",
     "HINDI(TH MAX-80)": "40",
-    "MATHS(TH MAX-80)": "18",
+    "MATHSS(TH MAX-80)": "18",
     "SCIENCE(TH MAX-80)": "46",
     "SOCIAL SCIENCE(TH MAX-80)": "52",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "15"
@@ -1576,7 +1576,7 @@
     "ROLL No.": "46",
     "ENGLISH (TH MAX-80)": "56",
     "HINDI(TH MAX-80)": "50",
-    "MATHS(TH MAX-80)": "AB",
+    "MATHSS(TH MAX-80)": "AB",
     "SCIENCE(TH MAX-80)": "48",
     "SOCIAL SCIENCE(TH MAX-80)": "67",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -1590,7 +1590,7 @@
     "ROLL No.": "48",
     "ENGLISH (TH MAX-80)": "24",
     "HINDI(TH MAX-80)": "48",
-    "MATHS(TH MAX-80)": "23",
+    "MATHSS(TH MAX-80)": "23",
     "SCIENCE(TH MAX-80)": "19",
     "SOCIAL SCIENCE(TH MAX-80)": "12",
     "INFORMATION TECHNOLOGY(TH MAX-50)": ""
@@ -1604,7 +1604,7 @@
     "ROLL No.": "49",
     "ENGLISH (TH MAX-80)": "60",
     "HINDI(TH MAX-80)": "62",
-    "MATHS(TH MAX-80)": "29",
+    "MATHSS(TH MAX-80)": "29",
     "SCIENCE(TH MAX-80)": "51",
     "SOCIAL SCIENCE(TH MAX-80)": "62",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -1618,7 +1618,7 @@
     "ROLL No.": "50",
     "ENGLISH (TH MAX-80)": "54",
     "HINDI(TH MAX-80)": "56",
-    "MATHS(TH MAX-80)": "31",
+    "MATHSS(TH MAX-80)": "31",
     "SCIENCE(TH MAX-80)": "59",
     "SOCIAL SCIENCE(TH MAX-80)": "65",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "24"
@@ -1632,7 +1632,7 @@
     "ROLL No.": "51",
     "ENGLISH (TH MAX-80)": "59",
     "HINDI(TH MAX-80)": "59",
-    "MATHS(TH MAX-80)": "31",
+    "MATHSS(TH MAX-80)": "31",
     "SCIENCE(TH MAX-80)": "50",
     "SOCIAL SCIENCE(TH MAX-80)": "36",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "27"
@@ -1646,7 +1646,7 @@
     "ROLL No.": "01",
     "ENGLISH (TH MAX-80)": "79",
     "HINDI(TH MAX-80)": "77",
-    "MATH(TH MAX-80)": "77",
+    "MATHS(TH MAX-80)": "77",
     "SCIENCE(TH MAX-80)": "77",
     "SOCIAL SCIENCE(TH MAX-80)": "79",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "41"
@@ -1660,7 +1660,7 @@
     "ROLL No.": "02",
     "ENGLISH (TH MAX-80)": "79",
     "HINDI(TH MAX-80)": "77",
-    "MATH(TH MAX-80)": "60",
+    "MATHS(TH MAX-80)": "60",
     "SCIENCE(TH MAX-80)": "74",
     "SOCIAL SCIENCE(TH MAX-80)": "74",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "39"
@@ -1674,7 +1674,7 @@
     "ROLL No.": "03",
     "ENGLISH (TH MAX-80)": "79",
     "HINDI(TH MAX-80)": "77",
-    "MATH(TH MAX-80)": "76",
+    "MATHS(TH MAX-80)": "76",
     "SCIENCE(TH MAX-80)": "71",
     "SOCIAL SCIENCE(TH MAX-80)": "76",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -1688,7 +1688,7 @@
     "ROLL No.": "04",
     "ENGLISH (TH MAX-80)": "71",
     "HINDI(TH MAX-80)": "74",
-    "MATH(TH MAX-80)": "77",
+    "MATHS(TH MAX-80)": "77",
     "SCIENCE(TH MAX-80)": "73",
     "SOCIAL SCIENCE(TH MAX-80)": "72",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "40"
@@ -1702,7 +1702,7 @@
     "ROLL No.": "05",
     "ENGLISH (TH MAX-80)": "77",
     "HINDI(TH MAX-80)": "76",
-    "MATH(TH MAX-80)": "77",
+    "MATHS(TH MAX-80)": "77",
     "SCIENCE(TH MAX-80)": "70",
     "SOCIAL SCIENCE(TH MAX-80)": "79",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "41"
@@ -1716,7 +1716,7 @@
     "ROLL No.": "06",
     "ENGLISH (TH MAX-80)": "74",
     "HINDI(TH MAX-80)": "76",
-    "MATH(TH MAX-80)": "71",
+    "MATHS(TH MAX-80)": "71",
     "SCIENCE(TH MAX-80)": "78",
     "SOCIAL SCIENCE(TH MAX-80)": "79",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "45"
@@ -1730,7 +1730,7 @@
     "ROLL No.": "07",
     "ENGLISH (TH MAX-80)": "75",
     "HINDI(TH MAX-80)": "74",
-    "MATH(TH MAX-80)": "66",
+    "MATHS(TH MAX-80)": "66",
     "SCIENCE(TH MAX-80)": "74",
     "SOCIAL SCIENCE(TH MAX-80)": "78",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "37"
@@ -1744,7 +1744,7 @@
     "ROLL No.": "08",
     "ENGLISH (TH MAX-80)": "79",
     "HINDI(TH MAX-80)": "75",
-    "MATH(TH MAX-80)": "60",
+    "MATHS(TH MAX-80)": "60",
     "SCIENCE(TH MAX-80)": "75",
     "SOCIAL SCIENCE(TH MAX-80)": "77",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "41"
@@ -1758,7 +1758,7 @@
     "ROLL No.": "09",
     "ENGLISH (TH MAX-80)": "79",
     "HINDI(TH MAX-80)": "76",
-    "MATH(TH MAX-80)": "73",
+    "MATHS(TH MAX-80)": "73",
     "SCIENCE(TH MAX-80)": "69",
     "SOCIAL SCIENCE(TH MAX-80)": "74",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -1772,7 +1772,7 @@
     "ROLL No.": "10",
     "ENGLISH (TH MAX-80)": "79",
     "HINDI(TH MAX-80)": "76",
-    "MATH(TH MAX-80)": "71",
+    "MATHS(TH MAX-80)": "71",
     "SCIENCE(TH MAX-80)": "73",
     "SOCIAL SCIENCE(TH MAX-80)": "72",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "41"
@@ -1786,7 +1786,7 @@
     "ROLL No.": "11",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "66",
-    "MATH(TH MAX-80)": "73",
+    "MATHS(TH MAX-80)": "73",
     "SCIENCE(TH MAX-80)": "65",
     "SOCIAL SCIENCE(TH MAX-80)": "76",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "33"
@@ -1800,7 +1800,7 @@
     "ROLL No.": "12",
     "ENGLISH (TH MAX-80)": "79",
     "HINDI(TH MAX-80)": "76",
-    "MATH(TH MAX-80)": "79",
+    "MATHS(TH MAX-80)": "79",
     "SCIENCE(TH MAX-80)": "75",
     "SOCIAL SCIENCE(TH MAX-80)": "73",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "46"
@@ -1814,7 +1814,7 @@
     "ROLL No.": "13",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "70",
-    "MATH(TH MAX-80)": "52",
+    "MATHS(TH MAX-80)": "52",
     "SCIENCE(TH MAX-80)": "71",
     "SOCIAL SCIENCE(TH MAX-80)": "77",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -1828,7 +1828,7 @@
     "ROLL No.": "14",
     "ENGLISH (TH MAX-80)": "73",
     "HINDI(TH MAX-80)": "71",
-    "MATH(TH MAX-80)": "71",
+    "MATHS(TH MAX-80)": "71",
     "SCIENCE(TH MAX-80)": "65",
     "SOCIAL SCIENCE(TH MAX-80)": "75",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "43"
@@ -1842,7 +1842,7 @@
     "ROLL No.": "15",
     "ENGLISH (TH MAX-80)": "77",
     "HINDI(TH MAX-80)": "68",
-    "MATH(TH MAX-80)": "75",
+    "MATHS(TH MAX-80)": "75",
     "SCIENCE(TH MAX-80)": "68",
     "SOCIAL SCIENCE(TH MAX-80)": "76",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -1856,7 +1856,7 @@
     "ROLL No.": "16",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "76",
-    "MATH(TH MAX-80)": "70",
+    "MATHS(TH MAX-80)": "70",
     "SCIENCE(TH MAX-80)": "64",
     "SOCIAL SCIENCE(TH MAX-80)": "75",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "36"
@@ -1870,7 +1870,7 @@
     "ROLL No.": "17",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "77",
-    "MATH(TH MAX-80)": "60",
+    "MATHS(TH MAX-80)": "60",
     "SCIENCE(TH MAX-80)": "67",
     "SOCIAL SCIENCE(TH MAX-80)": "76",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "39"
@@ -1884,7 +1884,7 @@
     "ROLL No.": "18",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "74",
-    "MATH(TH MAX-80)": "58",
+    "MATHS(TH MAX-80)": "58",
     "SCIENCE(TH MAX-80)": "65",
     "SOCIAL SCIENCE(TH MAX-80)": "74",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "39"
@@ -1898,7 +1898,7 @@
     "ROLL No.": "19",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "74",
-    "MATH(TH MAX-80)": "59",
+    "MATHS(TH MAX-80)": "59",
     "SCIENCE(TH MAX-80)": "68",
     "SOCIAL SCIENCE(TH MAX-80)": "77",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "33"
@@ -1912,7 +1912,7 @@
     "ROLL No.": "20",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "76",
-    "MATH(TH MAX-80)": "58",
+    "MATHS(TH MAX-80)": "58",
     "SCIENCE(TH MAX-80)": "63",
     "SOCIAL SCIENCE(TH MAX-80)": "76",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "29"
@@ -1926,7 +1926,7 @@
     "ROLL No.": "21",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "68",
-    "MATH(TH MAX-80)": "62",
+    "MATHS(TH MAX-80)": "62",
     "SCIENCE(TH MAX-80)": "52",
     "SOCIAL SCIENCE(TH MAX-80)": "54",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "37"
@@ -1940,7 +1940,7 @@
     "ROLL No.": "22",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "74",
-    "MATH(TH MAX-80)": "51",
+    "MATHS(TH MAX-80)": "51",
     "SCIENCE(TH MAX-80)": "58",
     "SOCIAL SCIENCE(TH MAX-80)": "72",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "23"
@@ -1954,7 +1954,7 @@
     "ROLL No.": "23",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "75",
-    "MATH(TH MAX-80)": "32",
+    "MATHS(TH MAX-80)": "32",
     "SCIENCE(TH MAX-80)": "66",
     "SOCIAL SCIENCE(TH MAX-80)": "61",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "41"
@@ -1968,7 +1968,7 @@
     "ROLL No.": "24",
     "ENGLISH (TH MAX-80)": "71",
     "HINDI(TH MAX-80)": "69",
-    "MATH(TH MAX-80)": "52",
+    "MATHS(TH MAX-80)": "52",
     "SCIENCE(TH MAX-80)": "63",
     "SOCIAL SCIENCE(TH MAX-80)": "59",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "26"
@@ -1982,7 +1982,7 @@
     "ROLL No.": "25",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "70",
-    "MATH(TH MAX-80)": "42",
+    "MATHS(TH MAX-80)": "42",
     "SCIENCE(TH MAX-80)": "63",
     "SOCIAL SCIENCE(TH MAX-80)": "67",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "36"
@@ -1996,7 +1996,7 @@
     "ROLL No.": "26",
     "ENGLISH (TH MAX-80)": "78",
     "HINDI(TH MAX-80)": "66",
-    "MATH(TH MAX-80)": "50",
+    "MATHS(TH MAX-80)": "50",
     "SCIENCE(TH MAX-80)": "72",
     "SOCIAL SCIENCE(TH MAX-80)": "73",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "35"
@@ -2010,7 +2010,7 @@
     "ROLL No.": "27",
     "ENGLISH (TH MAX-80)": "60",
     "HINDI(TH MAX-80)": "60",
-    "MATH(TH MAX-80)": "52",
+    "MATHS(TH MAX-80)": "52",
     "SCIENCE(TH MAX-80)": "68",
     "SOCIAL SCIENCE(TH MAX-80)": "64",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "22"
@@ -2024,7 +2024,7 @@
     "ROLL No.": "28",
     "ENGLISH (TH MAX-80)": "73",
     "HINDI(TH MAX-80)": "67",
-    "MATH(TH MAX-80)": "42",
+    "MATHS(TH MAX-80)": "42",
     "SCIENCE(TH MAX-80)": "58",
     "SOCIAL SCIENCE(TH MAX-80)": "68",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "25"
@@ -2038,7 +2038,7 @@
     "ROLL No.": "29",
     "ENGLISH (TH MAX-80)": "64",
     "HINDI(TH MAX-80)": "40",
-    "MATH(TH MAX-80)": "29",
+    "MATHS(TH MAX-80)": "29",
     "SCIENCE(TH MAX-80)": "53",
     "SOCIAL SCIENCE(TH MAX-80)": "35",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "28"
@@ -2052,7 +2052,7 @@
     "ROLL No.": "30",
     "ENGLISH (TH MAX-80)": "71",
     "HINDI(TH MAX-80)": "72",
-    "MATH(TH MAX-80)": "55",
+    "MATHS(TH MAX-80)": "55",
     "SCIENCE(TH MAX-80)": "60",
     "SOCIAL SCIENCE(TH MAX-80)": "73",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "24"
@@ -2066,7 +2066,7 @@
     "ROLL No.": "31",
     "ENGLISH (TH MAX-80)": "75",
     "HINDI(TH MAX-80)": "75",
-    "MATH(TH MAX-80)": "64",
+    "MATHS(TH MAX-80)": "64",
     "SCIENCE(TH MAX-80)": "64",
     "SOCIAL SCIENCE(TH MAX-80)": "78",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "40"
@@ -2080,7 +2080,7 @@
     "ROLL No.": "32",
     "ENGLISH (TH MAX-80)": "79",
     "HINDI(TH MAX-80)": "70",
-    "MATH(TH MAX-80)": "38",
+    "MATHS(TH MAX-80)": "38",
     "SCIENCE(TH MAX-80)": "58",
     "SOCIAL SCIENCE(TH MAX-80)": "56",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "27"
@@ -2094,7 +2094,7 @@
     "ROLL No.": "33",
     "ENGLISH (TH MAX-80)": "64",
     "HINDI(TH MAX-80)": "76",
-    "MATH(TH MAX-80)": "32",
+    "MATHS(TH MAX-80)": "32",
     "SCIENCE(TH MAX-80)": "53",
     "SOCIAL SCIENCE(TH MAX-80)": "59",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
@@ -2108,7 +2108,7 @@
     "ROLL No.": "34",
     "ENGLISH (TH MAX-80)": "AB",
     "HINDI(TH MAX-80)": "AB",
-    "MATH(TH MAX-80)": "AB",
+    "MATHS(TH MAX-80)": "AB",
     "SCIENCE(TH MAX-80)": "AB",
     "SOCIAL SCIENCE(TH MAX-80)": "AB",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "AB"
@@ -2122,7 +2122,7 @@
     "ROLL No.": "35",
     "ENGLISH (TH MAX-80)": "67",
     "HINDI(TH MAX-80)": "70",
-    "MATH(TH MAX-80)": "62",
+    "MATHS(TH MAX-80)": "62",
     "SCIENCE(TH MAX-80)": "63",
     "SOCIAL SCIENCE(TH MAX-80)": "72",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "37"
@@ -2136,7 +2136,7 @@
     "ROLL No.": "36",
     "ENGLISH (TH MAX-80)": "70",
     "HINDI(TH MAX-80)": "72",
-    "MATH(TH MAX-80)": "31",
+    "MATHS(TH MAX-80)": "31",
     "SCIENCE(TH MAX-80)": "59",
     "SOCIAL SCIENCE(TH MAX-80)": "62",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "39"
@@ -2150,7 +2150,7 @@
     "ROLL No.": "37",
     "ENGLISH (TH MAX-80)": "74",
     "HINDI(TH MAX-80)": "74",
-    "MATH(TH MAX-80)": "46",
+    "MATHS(TH MAX-80)": "46",
     "SCIENCE(TH MAX-80)": "62",
     "SOCIAL SCIENCE(TH MAX-80)": "64",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "27"
@@ -2164,7 +2164,7 @@
     "ROLL No.": "38",
     "ENGLISH (TH MAX-80)": "62",
     "HINDI(TH MAX-80)": "68",
-    "MATH(TH MAX-80)": "47",
+    "MATHS(TH MAX-80)": "47",
     "SCIENCE(TH MAX-80)": "62",
     "SOCIAL SCIENCE(TH MAX-80)": "55",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -2178,7 +2178,7 @@
     "ROLL No.": "39",
     "ENGLISH (TH MAX-80)": "66",
     "HINDI(TH MAX-80)": "69",
-    "MATH(TH MAX-80)": "20",
+    "MATHS(TH MAX-80)": "20",
     "SCIENCE(TH MAX-80)": "64",
     "SOCIAL SCIENCE(TH MAX-80)": "60",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "25"
@@ -2192,7 +2192,7 @@
     "ROLL No.": "40",
     "ENGLISH (TH MAX-80)": "50",
     "HINDI(TH MAX-80)": "60",
-    "MATH(TH MAX-80)": "19",
+    "MATHS(TH MAX-80)": "19",
     "SCIENCE(TH MAX-80)": "45",
     "SOCIAL SCIENCE(TH MAX-80)": "53",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "27"
@@ -2206,7 +2206,7 @@
     "ROLL No.": "41",
     "ENGLISH (TH MAX-80)": "59",
     "HINDI(TH MAX-80)": "63",
-    "MATH(TH MAX-80)": "33",
+    "MATHS(TH MAX-80)": "33",
     "SCIENCE(TH MAX-80)": "60",
     "SOCIAL SCIENCE(TH MAX-80)": "50",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "22"
@@ -2220,7 +2220,7 @@
     "ROLL No.": "42",
     "ENGLISH (TH MAX-80)": "71",
     "HINDI(TH MAX-80)": "74",
-    "MATH(TH MAX-80)": "29",
+    "MATHS(TH MAX-80)": "29",
     "SCIENCE(TH MAX-80)": "60",
     "SOCIAL SCIENCE(TH MAX-80)": "74",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "28"
@@ -2234,7 +2234,7 @@
     "ROLL No.": "43",
     "ENGLISH (TH MAX-80)": "43",
     "HINDI(TH MAX-80)": "70",
-    "MATH(TH MAX-80)": "46",
+    "MATHS(TH MAX-80)": "46",
     "SCIENCE(TH MAX-80)": "65",
     "SOCIAL SCIENCE(TH MAX-80)": "66",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -2248,7 +2248,7 @@
     "ROLL No.": "44",
     "ENGLISH (TH MAX-80)": "44",
     "HINDI(TH MAX-80)": "67",
-    "MATH(TH MAX-80)": "44",
+    "MATHS(TH MAX-80)": "44",
     "SCIENCE(TH MAX-80)": "58",
     "SOCIAL SCIENCE(TH MAX-80)": "55",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "29"
@@ -2262,7 +2262,7 @@
     "ROLL No.": "45",
     "ENGLISH (TH MAX-80)": "45",
     "HINDI(TH MAX-80)": "67",
-    "MATH(TH MAX-80)": "44",
+    "MATHS(TH MAX-80)": "44",
     "SCIENCE(TH MAX-80)": "62",
     "SOCIAL SCIENCE(TH MAX-80)": "70",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "22"
@@ -2276,7 +2276,7 @@
     "ROLL No.": "46",
     "ENGLISH (TH MAX-80)": "74",
     "HINDI(TH MAX-80)": "68",
-    "MATH(TH MAX-80)": "47",
+    "MATHS(TH MAX-80)": "47",
     "SCIENCE(TH MAX-80)": "64",
     "SOCIAL SCIENCE(TH MAX-80)": "",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "38"
@@ -2290,7 +2290,7 @@
     "ROLL No.": "47",
     "ENGLISH (TH MAX-80)": "49",
     "HINDI(TH MAX-80)": "40",
-    "MATH(TH MAX-80)": "36",
+    "MATHS(TH MAX-80)": "36",
     "SCIENCE(TH MAX-80)": "29",
     "SOCIAL SCIENCE(TH MAX-80)": "50",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "10"
@@ -2304,7 +2304,7 @@
     "ROLL No.": "48",
     "ENGLISH (TH MAX-80)": "69",
     "HINDI(TH MAX-80)": "68",
-    "MATH(TH MAX-80)": "36",
+    "MATHS(TH MAX-80)": "36",
     "SCIENCE(TH MAX-80)": "35",
     "SOCIAL SCIENCE(TH MAX-80)": "53",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "28"
@@ -2318,7 +2318,7 @@
     "ROLL No.": "49",
     "ENGLISH (TH MAX-80)": "73",
     "HINDI(TH MAX-80)": "70",
-    "MATH(TH MAX-80)": "59",
+    "MATHS(TH MAX-80)": "59",
     "SCIENCE(TH MAX-80)": "61",
     "SOCIAL SCIENCE(TH MAX-80)": "63",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "24"
@@ -2332,7 +2332,7 @@
     "ROLL No.": "50",
     "ENGLISH (TH MAX-80)": "54",
     "HINDI(TH MAX-80)": "61",
-    "MATH(TH MAX-80)": "38",
+    "MATHS(TH MAX-80)": "38",
     "SCIENCE(TH MAX-80)": "54",
     "SOCIAL SCIENCE(TH MAX-80)": "58",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "25"
@@ -2346,7 +2346,7 @@
     "ROLL No.": "51",
     "ENGLISH (TH MAX-80)": "71",
     "HINDI(TH MAX-80)": "69",
-    "MATH(TH MAX-80)": "34",
+    "MATHS(TH MAX-80)": "34",
     "SCIENCE(TH MAX-80)": "51",
     "SOCIAL SCIENCE(TH MAX-80)": "65",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "28"
@@ -2360,7 +2360,7 @@
     "ROLL No.": "52",
     "ENGLISH (TH MAX-80)": "63",
     "HINDI(TH MAX-80)": "59",
-    "MATH(TH MAX-80)": "41",
+    "MATHS(TH MAX-80)": "41",
     "SCIENCE(TH MAX-80)": "54",
     "SOCIAL SCIENCE(TH MAX-80)": "62",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "30"
@@ -2374,7 +2374,7 @@
     "ROLL No.": "53",
     "ENGLISH (TH MAX-80)": "54",
     "HINDI(TH MAX-80)": "55",
-    "MATH(TH MAX-80)": "45",
+    "MATHS(TH MAX-80)": "45",
     "SCIENCE(TH MAX-80)": "56",
     "SOCIAL SCIENCE(TH MAX-80)": "41",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "28"
@@ -2388,7 +2388,7 @@
     "ROLL No.": "54",
     "ENGLISH (TH MAX-80)": "74",
     "HINDI(TH MAX-80)": "67",
-    "MATH(TH MAX-80)": "26",
+    "MATHS(TH MAX-80)": "26",
     "SCIENCE(TH MAX-80)": "56",
     "SOCIAL SCIENCE(TH MAX-80)": "63",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "33"
@@ -2402,7 +2402,7 @@
     "ROLL No.": "55",
     "ENGLISH (TH MAX-80)": "73",
     "HINDI(TH MAX-80)": "56",
-    "MATH(TH MAX-80)": "41",
+    "MATHS(TH MAX-80)": "41",
     "SCIENCE(TH MAX-80)": "59",
     "SOCIAL SCIENCE(TH MAX-80)": "65",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "24"
@@ -2416,7 +2416,7 @@
     "ROLL No.": "56",
     "ENGLISH (TH MAX-80)": "40",
     "HINDI(TH MAX-80)": "50",
-    "MATH(TH MAX-80)": "20",
+    "MATHS(TH MAX-80)": "20",
     "SCIENCE(TH MAX-80)": "56",
     "SOCIAL SCIENCE(TH MAX-80)": "39",
     "INFORMATION TECHNOLOGY(TH MAX-50)": "34"
