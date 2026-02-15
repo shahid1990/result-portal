@@ -143,14 +143,23 @@ function createPDF(){
     const img = document.querySelector(".header img");
     const base64 = getBase64Image(img);
 
-    // =========================
-    // LEFT ALIGNED LOGO (Fitted Properly)
-    // =========================
-    const logoWidth = 30;
-    const ratio = img.naturalHeight / img.naturalWidth;
-    const logoHeight = logoWidth * ratio;
+   // =========================
+// PERFECT FIT LOGO (No Cut)
+// =========================
+const img = document.querySelector(".header img");
+const base64 = getBase64Image(img);
 
-    doc.addImage(base64, "PNG", 15, 15, logoWidth, logoHeight);
+// Set maximum height allowed
+const maxHeight = 28;   // safe height
+const ratio = img.naturalWidth / img.naturalHeight;
+
+// Calculate width based on fixed height
+const logoHeight = maxHeight;
+const logoWidth = logoHeight * ratio;
+
+// Add image (left aligned, properly fitted)
+doc.addImage(base64, "PNG", 15, 12, logoWidth, logoHeight);
+
 
     // =========================
     // SCHOOL NAME
