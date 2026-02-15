@@ -140,48 +140,48 @@ function createPDF(){
     const pageWidth = doc.internal.pageSize.getWidth();
     let y = 15;
 
+    // =========================
+    // LOGO (PERFECT FIT - NO CUT)
+    // =========================
     const img = document.querySelector(".header img");
-    const base64 = getBase64Image(img);
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
 
-   // =========================
-// PERFECT FIT LOGO (No Cut)
-// =========================
-const img = document.querySelector(".header img");
-const base64 = getBase64Image(img);
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+    ctx.drawImage(img, 0, 0);
 
-// Set maximum height allowed
-const maxHeight = 28;   // safe height
-const ratio = img.naturalWidth / img.naturalHeight;
+    const base64 = canvas.toDataURL("image/png");
 
-// Calculate width based on fixed height
-const logoHeight = maxHeight;
-const logoWidth = logoHeight * ratio;
+    // Fix height and auto scale width
+    const maxHeight = 25; // Safe height
+    const ratio = img.naturalWidth / img.naturalHeight;
+    const logoHeight = maxHeight;
+    const logoWidth = logoHeight * ratio;
 
-// Add image (left aligned, properly fitted)
-doc.addImage(base64, "PNG", 15, 12, logoWidth, logoHeight);
-
+    doc.addImage(base64, "PNG", 15, 12, logoWidth, logoHeight);
 
     // =========================
-    // SCHOOL NAME
+    // SCHOOL HEADER
     // =========================
     doc.setFont("times","bold");
     doc.setFontSize(24);
     doc.text("SACRED HEART SCHOOL", pageWidth/2, 25, {align:"center"});
 
-    // BLACK STRIP
+    // Black Strip
     doc.setFillColor(0,0,0);
     doc.rect(45,30,pageWidth-90,8,"F");
 
+    doc.setFont("times","italic");
     doc.setFontSize(10);
     doc.setTextColor(255,255,255);
-    doc.setFont("times","italic");
     doc.text("(Affiliated to CBSE, up to +2 Level, New Delhi, Affiliation No. - 3430224)",
         pageWidth/2,36,{align:"center"});
 
     doc.setTextColor(0,0,0);
 
-    doc.setFontSize(11);
     doc.setFont("times","normal");
+    doc.setFontSize(11);
     doc.text("Near Sankat Mochan Mandir, Asnabad, Jhumri Telaiya, Koderma",
         pageWidth/2,44,{align:"center"});
     doc.text("Email: shstelaiya@gmail.com     Website: www.sacredheartkoderma.org",
@@ -198,10 +198,10 @@ doc.addImage(base64, "PNG", 15, 12, logoWidth, logoHeight);
     doc.setFont("times","bold");
     doc.setFontSize(14);
     doc.text("PRE-BOARD EXAM RESULT (2025-26)",pageWidth/2,y,{align:"center"});
-    y+=15;
+    y += 15;
 
     // =========================
-    // STUDENT DETAILS (ALL LEFT ALIGNED)
+    // STUDENT DETAILS (LEFT ALIGNED)
     // =========================
     doc.setFont("times","normal");
     doc.setFontSize(11);
@@ -210,11 +210,11 @@ doc.addImage(base64, "PNG", 15, 12, logoWidth, logoHeight);
     doc.text(`Father's Name : ${s["FATHER'S NAME"]}`,20,y); y+=7;
     doc.text(`Admission No : ${s["Adm. No."]}`,20,y); y+=7;
     doc.text(`Roll No : ${s["ROLL No."]}`,20,y); y+=7;
-    doc.text(`Class : ${s["Class"]}-${s["Sec."]}`,20,y); 
+    doc.text(`Class : ${s["Class"]}-${s["Sec."]}`,20,y);
     y+=15;
 
     // =========================
-    // TABLE
+    // SUBJECT TABLE
     // =========================
     const startX = 20;
     const rowHeight = 10;
@@ -225,7 +225,7 @@ doc.addImage(base64, "PNG", 15, 12, logoWidth, logoHeight);
 
     doc.setFont("times","bold");
 
-    // Header
+    // Header Row
     doc.rect(startX,y,col1,rowHeight);
     doc.rect(startX+col1,y,col2,rowHeight);
     doc.rect(startX+col1+col2,y,col3,rowHeight);
@@ -257,9 +257,9 @@ doc.addImage(base64, "PNG", 15, 12, logoWidth, logoHeight);
     drawRow("INFORMATION TECHNOLOGY",50,s["INFORMATION TECHNOLOGY(TH MAX-50)"]);
 
     // =========================
-    // SIGNATURE
+    // SIGNATURE SECTION
     // =========================
-    y+=25;
+    y += 25;
     doc.text("Class Teacher's Sign",25,y);
     doc.text("Principal",pageWidth-25,y,{align:"right"});
 
