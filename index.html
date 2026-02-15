@@ -153,8 +153,7 @@ function createPDF(){
 
     const base64 = canvas.toDataURL("image/png");
 
-    // Fix height and auto scale width
-    const maxHeight = 25; // Safe height
+    const maxHeight = 25;
     const ratio = img.naturalWidth / img.naturalHeight;
     const logoHeight = maxHeight;
     const logoWidth = logoHeight * ratio;
@@ -168,7 +167,6 @@ function createPDF(){
     doc.setFontSize(24);
     doc.text("SACRED HEART SCHOOL", pageWidth/2, 25, {align:"center"});
 
-    // Black Strip
     doc.setFillColor(0,0,0);
     doc.rect(45,30,pageWidth-90,8,"F");
 
@@ -201,16 +199,44 @@ function createPDF(){
     y += 15;
 
     // =========================
-    // STUDENT DETAILS (LEFT ALIGNED)
+    // STUDENT DETAILS
     // =========================
     doc.setFont("times","normal");
     doc.setFontSize(11);
 
-    doc.text(`Student Name : ${s["STUDENT'S NAME"]}`,20,y); y+=7;
-    doc.text(`Father's Name : ${s["FATHER'S NAME"]}`,20,y); y+=7;
-    doc.text(`Admission No : ${s["Adm. No."]}`,20,y); y+=7;
-    doc.text(`Roll No : ${s["ROLL No."]}`,20,y); y+=7;
-    doc.text(`Class : ${s["Class"]}-${s["Sec."]}`,20,y);
+    // Student's Name (Label Normal, Name Bold)
+    doc.text("Student's Name : ",20,y);
+    doc.setFont("times","bold");
+    doc.text(s["STUDENT'S NAME"],55,y);
+    doc.setFont("times","normal");
+    y+=7;
+
+    // Father's Name
+    doc.text("Father's Name : ",20,y);
+    doc.setFont("times","bold");
+    doc.text(s["FATHER'S NAME"],55,y);
+    doc.setFont("times","normal");
+    y+=7;
+
+    // Admission No
+    doc.text("Admission No : ",20,y);
+    doc.setFont("times","bold");
+    doc.text(String(s["Adm. No."]),55,y);
+    doc.setFont("times","normal");
+    y+=7;
+
+    // Roll No
+    doc.text("Roll No : ",20,y);
+    doc.setFont("times","bold");
+    doc.text(String(s["ROLL No."]),55,y);
+    doc.setFont("times","normal");
+    y+=7;
+
+    // Class
+    doc.text("Class : ",20,y);
+    doc.setFont("times","bold");
+    doc.text(`${s["Class"]}-${s["Sec."]}`,55,y);
+    doc.setFont("times","normal");
     y+=15;
 
     // =========================
