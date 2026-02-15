@@ -61,7 +61,7 @@ iframe{width:100%;height:600px;border:1px solid #ccc;border-radius:8px;}
 
 <div class="box">
     <div class="header">
-        <img src="image.jpeg">
+        <img id="schoolLogo" src="image.jpeg">
         <div>Affiliated to CBSE</div>
     </div>
 
@@ -90,12 +90,10 @@ const { jsPDF } = window.jspdf;
 let students = [];
 let currentStudent = null;
 
-// Load JSON
 fetch('data.json')
 .then(r=>r.json())
 .then(d=>students=d);
 
-// Search
 function search(){
     let adm = document.getElementById("admno").value.trim();
 
@@ -126,17 +124,17 @@ function search(){
     generateBtn.style.display="block";
 }
 
-// Convert image to base64 safely
 function getBase64Image(img) {
     const canvas = document.createElement("canvas");
-    canvas.width = img.width;
-    canvas.height = img.height;
     const ctx = canvas.getContext("2d");
+
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+
     ctx.drawImage(img, 0, 0);
     return canvas.toDataURL("image/jpeg");
 }
 
-// Create PDF
 function createPDF(){
 
     const s = currentStudent;
@@ -144,18 +142,18 @@ function createPDF(){
     const pageWidth = doc.internal.pageSize.getWidth();
     let y = 15;
 
-    const img = document.querySelector(".header img");
+    const img = document.getElementById("schoolLogo");
     const base64 = getBase64Image(img);
 
-    // LOGO
-    doc.addImage(base64,"JPEG",15,10,25,25);
+    const imgWidth = 25;
+    const imgHeight = (img.naturalHeight / img.naturalWidth) * imgWidth;
 
-    // SCHOOL NAME
+    doc.addImage(base64,"JPEG",15,8,imgWidth,imgHeight);
+
     doc.setFont("times","bold");
     doc.setFontSize(24);
     doc.text("SACRED HEART SCHOOL", pageWidth/2,18,{align:"center"});
 
-    // BLACK STRIP
     doc.setFillColor(0,0,0);
     doc.rect(45,23,120,8,"F");
 
@@ -224,7 +222,6 @@ function createPDF(){
     return doc;
 }
 
-// Preview
 function generatePDF(){
     const doc = createPDF();
     const blob = doc.output("blob");
@@ -233,7 +230,6 @@ function generatePDF(){
     pdfPreviewContainer.style.display="block";
 }
 
-// Download
 function downloadPDF(){
     const doc = createPDF();
     doc.save(`${currentStudent["Adm. No."]}-${currentStudent["STUDENT'S NAME"]}.pdf`);
